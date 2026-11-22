@@ -1,0 +1,498 @@
+=== FILE: activity_palma_001.md ===
+---
+id: activity_palma_001
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: culture
+interests: [history, architecture, art]
+targets: [family, couples, seniors]
+duration_min: 90
+cost_level: low
+indoor_outdoor: indoor
+booking_recommended: true
+---
+
+## Description
+
+Palma Cathedral, known as La Seu, is the defining landmark of Palma de Mallorca and the anchor of any visit to the city's historic core. This Gothic cathedral rises directly above the waterfront, its honey-coloured sandstone walls and flying buttresses reflected in the Parc de la Mar lagoon below. Inside, visitors find a vast, luminous nave with some of the tallest Gothic vaults in Europe, a celebrated rose window that floods the interior with coloured light in the morning, and a controversial modern chapel intervention by Antoni Gaudí alongside works by Miquel Barceló. A visit to Palma Cathedral (La Seu) Entry in Palma de Mallorca typically takes about an hour and a half, allowing time for the cloister, the museum rooms and quiet contemplation in the side chapels.
+
+## Who it's for
+
+The Palma Cathedral (La Seu) Entry experience in Palma de Mallorca suits families with older children, couples and seniors who appreciate history and architecture at a gentle pace. It is largely step-free around the main nave, seating is plentiful, and the cool interior offers welcome shade. Solo travellers interested in art and religious heritage will also find plenty to absorb.
+
+## Practical notes
+
+Palma Cathedral is open daily and sits within easy walking distance of the old town of Palma de Mallorca, so it pairs naturally with a patios walk or a waterfront stroll. Booking entry ahead is recommended in summer, when cruise-ship mornings bring the largest crowds; early visits are calmer and catch the rose window at its best. Shoulders and knees should be covered out of respect. Entry costs are low and the value is exceptional.
+
+=== FILE: activity_palma_002.md ===
+---
+id: activity_palma_002
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: relax
+interests: [sea, swimming, nature, photography]
+targets: [family, young, couples, relax-seekers]
+duration_min: 300
+cost_level: high
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+
+The Catamaran Cove & Snorkel Cruise in Palma de Mallorca turns a full afternoon into an easygoing Mediterranean escape. Departing from the marinas along the Palma waterfront, the catamaran glides west along the island's southern coast, past the cliffs of Cala Major and Illetes, before anchoring in a sheltered turquoise cove reachable only by boat. Guests swim straight from the deck, snorkel over seagrass meadows alive with small fish, or simply stretch out on the nets and sun decks while the crew keeps drinks and a light onboard meal flowing. The five-hour format leaves room for two swimming stops when conditions allow, and the sail back toward Palma de Mallorca in the late afternoon light is a highlight in itself, with the cathedral silhouette growing slowly on the horizon.
+
+## Who it's for
+
+This Palma de Mallorca catamaran cruise is ideal for families with confident swimmers, groups of young travellers, couples and dedicated relax-seekers. Snorkelling gear is provided, life jackets are available for children, and the stable twin-hull deck suits nervous sailors better than a monohull. Non-swimmers can happily stay aboard and sunbathe.
+
+## Practical notes
+
+The Catamaran Cove & Snorkel Cruise runs daily from Palma de Mallorca in the warm season, and advance booking is strongly recommended because deck space is limited. Bring swimwear worn under light clothing, reef-friendly sunscreen, a hat and a towel. This is a premium-priced outing; the cost level is high, reflecting the crewed boat, equipment and onboard catering. Motion-sensitive guests should choose midship seating and calm-weather days.
+
+=== FILE: activity_palma_003.md ===
+---
+id: activity_palma_003
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: sport
+interests: [hiking, nature, photography]
+targets: [sporty, young, solo]
+duration_min: 300
+cost_level: medium
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+
+The Serra de Tramuntana Guided Hike from Palma de Mallorca trades the beach for the island's dramatic mountain spine, a UNESCO-listed cultural landscape of dry-stone terraces, olive groves and limestone peaks. A local guide leads a five-hour route on the lower slopes above the Palma basin, climbing through holm-oak forest and past old snow-houses toward panoramic viewpoints where the whole Badia de Palma opens below, from the cathedral spires to the curve of Playa de Palma. The pace is steady rather than racing, with pauses to explain the centuries-old water channels, terraced farming and the historic trail network that laces these hills. Returning to Palma de Mallorca by early afternoon leaves the evening free for a swim or a long dinner in the old town.
+
+## Who it's for
+
+This guided hike near Palma de Mallorca is built for sporty travellers, active young visitors and solo hikers who want mountain scenery without logistics. A reasonable base fitness level is needed for sustained ascent on rocky paths; it is not suited to small children or anyone with knee problems on descents.
+
+## Practical notes
+
+The Serra de Tramuntana Guided Hike operates on Mondays, Wednesdays and Saturdays, and booking ahead is recommended as group sizes are kept small. Wear proper hiking shoes, carry more water than you think you need, and bring sun protection even under cloud. The cost level is medium and includes guiding and transfers from Palma de Mallorca. Summer departures start early to finish before the strongest heat.
+
+=== FILE: activity_palma_004.md ===
+---
+id: activity_palma_004
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: relax
+interests: [sea, swimming, wellness]
+targets: [young, couples, relax-seekers]
+duration_min: 300
+cost_level: medium
+indoor_outdoor: outdoor
+booking_recommended: false
+---
+
+## Description
+
+The Playa de Palma Beach Club Day gives visitors to Palma de Mallorca a full, unhurried day on the city's most famous stretch of sand. Playa de Palma runs for kilometres along the bay southeast of the centre, a long ribbon of pale sand lapped by shallow, calm water that stays swimmable far from shore. A beach club day here means claiming a lounger and parasol for the afternoon, alternating dips in the sea with long stretches of reading, dozing and people-watching, and breaking the day with a relaxed lunch of grilled fish or a cold salad at the club's terrace. The five-hour format suits the local rhythm: swim before the midday heat, eat late, swim again as the light softens. The promenade behind the sand links the beach districts of Palma de Mallorca with a flat, easy walk or cycle path.
+
+## Who it's for
+
+This beach club day at Playa de Palma suits young travellers, couples and relax-seekers who want the sea without an itinerary. The gentle entry into the water also works for families, though the club atmosphere skews adult and leisurely rather than activity-packed.
+
+## Practical notes
+
+The Playa de Palma Beach Club Day is available daily in season and booking is not essential, though reserving loungers ahead helps on August weekends. The beach is a short bus or taxi ride from central Palma de Mallorca. Costs are moderate: lounger rental and lunch add up gently rather than steeply. Bring high-factor sunscreen and reapply after swimming; shade is worth securing before noon.
+
+=== FILE: activity_palma_005.md ===
+---
+id: activity_palma_005
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: culture
+interests: [history, architecture, local-life, photography]
+targets: [couples, seniors, solo]
+duration_min: 150
+cost_level: medium
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+
+The Old Town & Patios Walking Tour is the best introduction to the layered history of Palma de Mallorca. Over two and a half hours, a local guide threads the lanes behind the cathedral, where Roman foundations, Islamic-era street patterns, Gothic merchant palaces and Modernist shopfronts sit within a few metres of each other. The signature of the tour is the patios: the discreet aristocratic courtyards of Palma de Mallorca's noble houses, glimpsed through carved portals, with their stone staircases, cistern mouths and shaded orange trees. Along the way the guide points out the old Arab baths, the guild churches, artisan workshops still trading in the same streets for generations, and the small squares where neighbours gather at dusk. It is a walk about reading a city, not ticking monuments, and it changes how the rest of Palma de Mallorca looks to you.
+
+## Who it's for
+
+This walking tour of Palma de Mallorca suits couples, seniors and solo travellers who enjoy stories, architecture and photography. The pace is gentle with frequent stops, though the old town has cobbles and occasional steps, so comfortable shoes matter more than fitness.
+
+## Practical notes
+
+The Old Town & Patios Walking Tour runs on Tuesdays, Thursdays and Saturdays, and booking ahead is recommended for the small-group format. Mornings are cooler and quieter in summer; some patios are private homes viewed from the threshold, so discretion is part of the etiquette. The cost level is medium. The route ends near the cathedral of Palma de Mallorca, an easy pairing for the rest of your day.
+
+=== FILE: activity_palma_006.md ===
+---
+id: activity_palma_006
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: culture
+interests: [history, architecture, nature]
+targets: [family, couples, sporty]
+duration_min: 120
+cost_level: low
+indoor_outdoor: mixed
+booking_recommended: false
+---
+
+## Description
+
+Bellver Castle & Forest Walk combines the most unusual castle in Palma de Mallorca with the pine woods that ring it. Set on a hill west of the centre, Bellver is a rare circular Gothic castle, built in the early fourteenth century as a royal residence and later used as a prison. Its round central courtyard, rooftop terrace and encircling moat give it a character quite unlike mainland Spanish fortresses, and the terrace delivers the classic panorama of Palma de Mallorca: the cathedral, the port full of masts, and the bay sweeping toward the Tramuntana. The surrounding Bosc de Bellver is a shaded municipal forest of Aleppo pines with looping paths, ideal for a cooling walk after the castle's sun-baked stone. Together they make a two-hour outing that feels far from the city while staying within sight of it.
+
+## Who it's for
+
+Bellver Castle & Forest Walk suits families, couples and sporty visitors to Palma de Mallorca. Children enjoy the moat and ramparts, the forest paths work for strollers on the main loop, and the uphill approach rewards anyone who likes a walk with a view at the end.
+
+## Practical notes
+
+Bellver Castle & Forest Walk is available daily in Palma de Mallorca, and booking is not needed; costs are low, making this one of the city's best-value outings. A bus or short taxi ride reaches the hill from the centre of Palma de Mallorca; walking up is pleasant in the morning but demanding in August heat. Combine castle shade, forest shade and a viewpoint stop for an easy half day.
+
+=== FILE: activity_palma_007.md ===
+---
+id: activity_palma_007
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: relax
+interests: [sea, photography]
+targets: [couples, young, relax-seekers]
+duration_min: 180
+cost_level: high
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+
+The Sunset Sailing Trip is Palma de Mallorca at its most cinematic. Leaving the city's marinas in the late afternoon, a crewed sailboat works out into the Badia de Palma under sail, engines off whenever the breeze allows, with the skyline of Palma de Mallorca sliding past: the cathedral above its walls, the terraced rooftops, the long arc of the waterfront. As the sun drops toward the western headlands the crew serves a chilled drink and light snacks, and the boat holds a comfortable position for the golden hour, when the sea turns copper and the Tramuntana ridges layer into silhouettes. Three hours is exactly enough to unwind, take the photographs, and glide back into port as the marina lights come on. It distils the relaxed, sea-facing character of Palma de Mallorca into a single evening.
+
+## Who it's for
+
+This sunset sail from Palma de Mallorca is made for couples, young travellers marking an occasion, and relax-seekers who want the sea without effort. No sailing experience is needed; guests can help at the lines or simply lounge. It is not aimed at families with toddlers, given the timing and open deck.
+
+## Practical notes
+
+The Sunset Sailing Trip runs daily in season from Palma de Mallorca, and booking ahead is recommended because guest numbers per boat are small. The cost level is high, reflecting a skippered yacht with drinks included. Bring a light layer for the return leg, when the breeze freshens, and non-slip shoes. Photographers should protect gear from spray; the best light comes in the final hour.
+
+=== FILE: activity_palma_008.md ===
+---
+id: activity_palma_008
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: sport
+interests: [cycling, nature, adventure]
+targets: [sporty, young, solo]
+duration_min: 240
+cost_level: medium
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+
+The Mountain E-Bike Tour lets visitors cover the wilder edge of Palma de Mallorca in four active hours. Riding quality electric mountain bikes, a small group follows a guide out of the city along the coastal bluffs and into the foothills above the bay, mixing sea-view tracks, pine-forest trails and quiet country lanes toward old estates and clifftop viewpoints. The electric assist flattens the climbs without removing the effort, so riders choose how hard to work while still reaching terrain a regular bike would make punishing in summer. Stops come at a rocky cove for photos, a shaded ridge above the Badia de Palma, and a village fountain square where the guide unpacks the island's cycling culture — Mallorca is a world pilgrimage for road cyclists, and Palma de Mallorca is its natural base camp.
+
+## Who it's for
+
+This e-bike tour around Palma de Mallorca fits sporty travellers, young adventurers and solo visitors who prefer doing to sightseeing. Basic bike-handling confidence is required for gravel sections; no elite fitness is needed thanks to the assist. It is not suitable for young children or non-riders.
+
+## Practical notes
+
+The Mountain E-Bike Tour operates on Mondays, Wednesdays and Fridays from Palma de Mallorca, with booking recommended to reserve bikes and keep groups small. Helmets are provided; wear closed shoes, sportswear and sunscreen, and carry water. The cost level is medium and includes bike, gear and guiding. Morning departures avoid the fiercest afternoon heat in high summer, and the ride finishes near the waterfront of Palma de Mallorca.
+
+=== FILE: activity_palma_009.md ===
+---
+id: activity_palma_009
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: food
+interests: [food, wine, local-life]
+targets: [foodies, couples, young]
+duration_min: 150
+cost_level: medium
+indoor_outdoor: mixed
+booking_recommended: true
+---
+
+## Description
+
+The Santa Catalina Wine & Tapas Tasting explores the most flavoursome neighbourhood of Palma de Mallorca. Santa Catalina, the old fishermen's district west of the centre, has evolved into the city's dining quarter while keeping its market heart: a handsome iron-and-glass market hall where island producers sell sobrasada, cheeses, olives and just-landed fish. Over two and a half hours a host walks the market and surrounding lanes, stopping at beloved bars for guided tastings: Mallorcan wines from the Binissalem and Pla i Llevant appellations, crisp island whites and herbal local spirits, each paired with tapas that tell the island's story — pan amb oli rubbed with ramallet tomatoes, sobrasada with honey, and a modern bite or two from the district's newer kitchens. Between stops, the host sketches how Santa Catalina went from nets to napkins without losing its soul, making this the tastiest history lesson in Palma de Mallorca.
+
+## Who it's for
+
+This tasting walk in Palma de Mallorca is aimed at foodies, couples who travel to eat, and young travellers who like their culture with a glass in hand. Portions across the stops amount to a light meal. Vegetarian adaptations are usually possible with notice.
+
+## Practical notes
+
+The Santa Catalina Wine & Tapas Tasting runs on Wednesdays, Fridays and Saturdays, and booking ahead is recommended for the small-group format. Come hungry but not starving; wear comfortable shoes for short walks between bars. The cost level is medium and covers all tastings. Evenings are liveliest; earlier departures are calmer and better for market atmosphere in Palma de Mallorca.
+
+=== FILE: activity_palma_010.md ===
+---
+id: activity_palma_010
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: culture
+interests: [art, architecture, photography]
+targets: [solo, couples, seniors]
+duration_min: 120
+cost_level: low
+indoor_outdoor: indoor
+booking_recommended: false
+---
+
+## Description
+
+Es Baluard Modern Art Museum is the contemporary counterweight to the Gothic weight of Palma de Mallorca. Built into and around the Renaissance Sant Pere bastion — part of the city's sixteenth-century sea walls — the museum itself is half the exhibit: raw sandstone ramparts, a vaulted cistern-like hall, and crisp modern galleries stacked above them, all crowned by a terrace that frames the cathedral and the bay in a single view. The collection focuses on modern and contemporary art with a strong Mallorcan and Mediterranean thread, anchored by artists who loved the island, from Sorolla and Miró to Barceló, alongside rotating exhibitions of photography and current practice. Two hours is enough to see the permanent collection, the current show and the terrace without rushing. Es Baluard is the most rewarding single indoor stop in Palma de Mallorca, and its architecture alone justifies the visit.
+
+## Who it's for
+
+Es Baluard suits solo travellers, couples and seniors who enjoy art at a contemplative pace. Lifts connect the levels of the bastion, benches are generous, and the air-conditioned galleries make it a strategic retreat on a hot Palma de Mallorca afternoon.
+
+## Practical notes
+
+The museum opens daily in season and booking is not required for individual visits; costs are low. Es Baluard sits at the western edge of the old town of Palma de Mallorca, a short walk from Santa Catalina, so it pairs neatly with the wine and tapas district for lunch afterward. The terrace view is best in late-afternoon light, and photography of the ramparts is encouraged.
+
+=== FILE: activity_palma_011.md ===
+---
+id: activity_palma_011
+type: activity
+city: Palma de Mallorca
+country: Spain
+category: nature
+interests: [nature, sea, swimming, photography]
+targets: [family, couples, sporty, young]
+duration_min: 420
+cost_level: medium
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+
+The Formentor Cape & Beach Day Trip takes visitors from Palma de Mallorca to the island's most photographed headland, a full seven-hour excursion to the far tip of the Serra de Tramuntana. The route crosses the plain of vineyards and almond groves, climbs through the pine-hung curves above Puerto Pollença, and follows the legendary cape road along knife-edge ridges with drops to impossibly blue water on both sides. At the lighthouse viewpoint the Mediterranean opens in three directions at once. The day balances the drama with stillness: a long stop at Formentor beach, a sheltered horseshoe of white sand and shallow, gin-clear water framed by pines, where swimming, paddling and a picnic lunch fill the early afternoon before the return run to Palma de Mallorca. It is the definitive contrast to the city — same island, wilder register.
+
+## Who it's for
+
+This day trip from Palma de Mallorca works for families, couples, sporty travellers and young explorers. The beach is shallow and gentle for children, the viewpoints need no walking effort, and photographers of every level come home with their best frames of the trip.
+
+## Practical notes
+
+The Formentor Cape & Beach Day Trip runs on Tuesdays, Thursdays, Saturdays and Sundays, departing from Palma de Mallorca; booking ahead is recommended in summer. Access rules for private cars on the cape road change seasonally, so an organised excursion is the simplest option. Bring swimwear, towels, snorkels, sunscreen and water. The cost level is medium. Expect winding roads; motion-sensitive travellers should sit forward.
+
+=== FILE: hotel_palma_001.md ===
+---
+id: hotel_palma_001
+type: hotel
+city: Palma de Mallorca
+country: Spain
+tier: budget
+max_guests_per_room: 2
+amenities: [wifi, ac]
+targets: [solo, young, couples]
+cost_level: low
+---
+
+## Description
+
+Hostal Casco Antiguo is a simple, well-kept budget hostal tucked into the old town of Palma de Mallorca, a few cobbled lanes from the cathedral. Rooms are compact and bright, with air conditioning and reliable wifi — the essentials done properly, without frills. The location is its luxury: mornings start among artisan shops and café bars, and most sights of Palma de Mallorca are on foot.
+
+## Who it's for
+
+Hostal Casco Antiguo in Palma de Mallorca suits solo travellers, young visitors and couples who spend their days out exploring and want a cheap, central base. Rooms sleep up to two guests, so it is not aimed at families needing extra beds.
+
+## Practical notes
+
+There is no restaurant or pool at Hostal Casco Antiguo; breakfast is easy in the surrounding old-town cafés of Palma de Mallorca. Costs are low. Expect some street noise in high season and pack light, as older buildings mean stairs and no lift.
+
+=== FILE: hotel_palma_002.md ===
+---
+id: hotel_palma_002
+type: hotel
+city: Palma de Mallorca
+country: Spain
+tier: budget
+max_guests_per_room: 2
+amenities: [wifi, breakfast, ac]
+targets: [foodies, couples, solo]
+cost_level: low
+---
+
+## Description
+
+Casa Santa Catalina is a small budget guesthouse in Santa Catalina, the food-loving former fishermen's quarter of Palma de Mallorca. A simple included breakfast — bread, local cheese, fruit and good coffee — gets the day going before the market hall a short walk away. Rooms are modest but comfortable, with air conditioning and wifi throughout, and the neighbourhood's tapas bars stand in for any hotel restaurant.
+
+## Who it's for
+
+Casa Santa Catalina suits foodies, couples and solo travellers who want to live where Palma de Mallorca eats. Rooms accommodate up to two guests, making it a poor fit for families but ideal for pairs and independent explorers.
+
+## Practical notes
+
+Costs at Casa Santa Catalina are low, and the included breakfast improves the value further. The location in Palma de Mallorca is walkable to the old town and a short ride from the beaches; evenings in Santa Catalina are lively, so light sleepers should request a rear-facing room.
+
+=== FILE: hotel_palma_003.md ===
+---
+id: hotel_palma_003
+type: hotel
+city: Palma de Mallorca
+country: Spain
+tier: mid
+max_guests_per_room: 3
+amenities: [wifi, breakfast, ac, sea-view, pool]
+targets: [couples, relax-seekers, family]
+cost_level: medium
+---
+
+## Description
+
+Hotel Cala Mayor sits above the Cala Major area west of central Palma de Mallorca, a relaxed coastal pocket with its own small beach. The mid-range hotel makes the most of its setting: sea-view rooms look across the bay, a pool terrace catches the sun through the afternoon, and breakfast is served with a horizon. Air conditioning and wifi come as standard, and the mood is unhurried rather than resort-loud.
+
+## Who it's for
+
+Hotel Cala Mayor in Palma de Mallorca suits couples, relax-seekers and small families; rooms take up to three guests. It fits travellers who want sea and pool on the doorstep without paying premium rates or staying in the busiest beach strip.
+
+## Practical notes
+
+Costs are moderate. Central Palma de Mallorca is a short bus ride away along the coast road, so culture mornings and pool afternoons combine easily. Sea-view rooms are worth requesting ahead in summer, and the walk down to the cove involves some steps.
+
+=== FILE: hotel_palma_004.md ===
+---
+id: hotel_palma_004
+type: hotel
+city: Palma de Mallorca
+country: Spain
+tier: mid
+max_guests_per_room: 3
+amenities: [wifi, breakfast, ac, pool]
+targets: [family, seniors, relax-seekers]
+cost_level: medium
+---
+
+## Description
+
+Residencia Badia de Palma is a comfortable mid-range residence-style hotel on the quieter residential side of the bay of Palma de Mallorca. Its strengths are practical: a good-sized pool with loungers, an included breakfast that suits early starts, air-conditioned rooms, and dependable wifi. The atmosphere is calm and neighbourly, closer to a guest apartment with hotel services than to a busy resort block.
+
+## Who it's for
+
+Residencia Badia de Palma suits families, seniors and relax-seekers who value quiet nights and easy days. Rooms sleep up to three guests. It works well for longer stays in Palma de Mallorca, when a pool base and a steady routine matter more than nightlife.
+
+## Practical notes
+
+Costs are moderate. The hotel is not in the walking heart of Palma de Mallorca, so plan on buses or short taxi rides for the old town and beaches; the flip side is calmer streets and easier evenings. Book pool-facing rooms early for summer stays.
+
+=== FILE: hotel_palma_005.md ===
+---
+id: hotel_palma_005
+type: hotel
+city: Palma de Mallorca
+country: Spain
+tier: mid
+max_guests_per_room: 4
+amenities: [wifi, breakfast, ac, pool, family-rooms, sea-view]
+targets: [family, relax-seekers, young]
+cost_level: medium
+---
+
+## Description
+
+Hotel Puerto Azul is a mid-range, family-friendly hotel near the port side of Palma de Mallorca, with sea-view rooms looking over the masts and the bay. Dedicated family rooms sleep up to four, the pool anchors the afternoon, and a solid included breakfast handles the morning rush before beach or boat. Air conditioning and wifi run throughout, and the tone is cheerful and practical.
+
+## Who it's for
+
+Hotel Puerto Azul is aimed squarely at families visiting Palma de Mallorca, and also suits groups of young friends sharing rooms and relax-seekers who want sea views at moderate cost. Four-person rooms make it one of the simplest family choices in the city.
+
+## Practical notes
+
+Costs are moderate, with family rooms offering strong per-person value. The port area of Palma de Mallorca puts catamaran departures and the waterfront promenade within walking distance; the old town is a stroll or short ride away. Request high-floor sea views when booking.
+
+=== FILE: hotel_palma_006.md ===
+---
+id: hotel_palma_006
+type: hotel
+city: Palma de Mallorca
+country: Spain
+tier: high
+max_guests_per_room: 4
+amenities: [wifi, breakfast, ac, pool, spa, family-rooms, sea-view]
+targets: [couples, family, relax-seekers]
+cost_level: high
+---
+
+## Description
+
+Grand Hotel Miramar Palma is the city's polished high-tier address, set along the seafront promenade of Palma de Mallorca with sweeping bay views. Rooms and suites are spacious, family rooms sleep up to four, and the wellness floor — spa circuits, treatments and a serene pool area — is the reason many guests never quite leave. Breakfast is a generous spread with island produce, service is attentive without ceremony, and the cathedral skyline glitters across the water at dusk.
+
+## Who it's for
+
+Grand Hotel Miramar Palma suits couples on a treat, families wanting space and facilities together, and serious relax-seekers. It is the premium choice in Palma de Mallorca for travellers who want the sea, the spa and the city in one stay.
+
+## Practical notes
+
+Costs are high, in line with the tier. The seafront location means the old town of Palma de Mallorca is a pleasant promenade walk away. Spa slots and family rooms should be reserved well ahead for August.
+
+=== FILE: destination_palma.md ===
+---
+id: destination_palma
+type: destination
+city: Palma de Mallorca
+country: Spain
+tags: ["sea", "relax", "family", "beach"]
+budget_level: medium
+best_for: [family, couples, relax-seekers]
+---
+
+## Overview
+
+Palma de Mallorca, the capital of Spain's largest Balearic island, is a compact Mediterranean city where a Gothic cathedral rises over a working marina and long sandy beaches begin minutes from the old town. Palma de Mallorca pairs genuine urban culture — La Seu, Bellver Castle, aristocratic patios, the Es Baluard museum — with an easy sea-facing life of coves, catamarans and beach clubs along the Badia de Palma. Behind the city, the UNESCO-listed Serra de Tramuntana adds hiking, cycling and the wild headland of Formentor within day-trip reach. The budget level is medium: above Spain's cheapest inland cities, below the island's premium resort enclaves.
+
+## Vibe & who it suits
+
+The character of Palma de Mallorca is sea, relax, family and beach. Days drift between swims and long lunches; evenings mean promenades, tapas in Santa Catalina and sunset sails. Families appreciate shallow beaches, short transfers and four-person hotel rooms; couples find romance in the old town and on the water; relax-seekers can do almost nothing, beautifully. Travellers prioritising dense museums or big-city nightlife may prefer Madrid or Barcelona; Palma de Mallorca wins when the sea sets the pace and culture is the seasoning.
+
+## When to go
+
+Between June and September 2026, Palma de Mallorca runs on full summer. June brings warm sea, long light and manageable crowds — the sweet spot for mixing beach and sightseeing. July heats up steadily and family traffic builds. August is the peak: hottest days, fullest beaches and hotels, and the highest prices of the year; book stays and popular activities well ahead and plan indoor or early-morning culture. September eases gracefully — the sea stays warm, crowds thin after the first week, and prices soften, making it ideal for couples and slower travellers.
+
+## Getting around
+
+Palma de Mallorca is refreshingly simple to navigate. The airport connects to the centre by a direct city bus in a short ride. Within the city, most sights — cathedral, old town, Santa Catalina, Es Baluard, the marina — are walkable, and the flat seafront promenade links the port to the beach districts. City buses cover the bay, Cala Major and Playa de Palma cheaply; taxis are plentiful for hilltop Bellver or late returns. Organised excursions handle the Tramuntana and Formentor, where mountain roads and seasonal access rules complicate self-driving.
+
+=== FILE: guide_palma.md ===
+---
+id: guide_palma
+type: guide
+city: Palma de Mallorca
+country: Spain
+topics: [transport, food, seasonality, day-planning]
+---
+
+## Transport
+
+Palma de Mallorca is easy to navigate without a car. A direct public bus links the airport, just east of the city, with the central intermodal station in a short, inexpensive ride; taxis wait outside arrivals for door-to-door transfers. There is no need for a metro: the historic core of Palma de Mallorca is compact and walkable, and the flat seafront promenade connects the marina, old town edges and beach districts. City buses run along the bay to Cala Major, the port and Playa de Palma, while the intermodal hub near Plaza España links rail and bus lines for island trips. Cycling suits the seafront lanes. For the Tramuntana and Formentor, guided excursions beat summer self-driving.
+
+## Food
+
+Eating well is central to Palma de Mallorca. Look for sobrasada, the soft spreadable cured sausage; ensaïmada, the island's spiral pastry; pan amb oli, bread rubbed with ramallet tomatoes and olive oil; tumbet, layered vegetables; and fresh fish and rice dishes. Mallorcan wines from Binissalem and Pla i Llevant deserve a place at the table. Santa Catalina is the dining quarter of Palma de Mallorca, with a lively market hall by day and tapas bars from old-school to inventive by night. Lunch is the main meal and runs late; dinner waits for the evening cool. Costs are moderate, with seafront terraces trending premium.
+
+## Day-planning tips
+
+Structure days in Palma de Mallorca around the heat: culture in the morning, water or shade in the afternoon, food and neighbourhoods after sunset. Group sights geographically — cathedral, patios and Es Baluard form one walkable cluster; Bellver pairs with its forest; Santa Catalina anchors meals. Book popular entries, small-group tours and boat trips ahead in summer. Families should plan one anchor activity daily plus beach time, with shallow Playa de Palma or the hotel pool as fallback; young travellers can pair a morning hike or e-bike ride with an evening sail. Keep one unscheduled half-day for drifting.
+
+## Seasonality
+
+From June to September 2026, Palma de Mallorca is in full summer. June balances warm swimmable sea, long evenings and pre-peak prices. July brings steady heat and growing family crowds. August is the peak — hottest, most crowded and most expensive; reserve early, start at dawn, and lean on air-conditioned museums and shaded patios at midday. September softens: the sea stays warm, crowds and prices ease, and evening life remains lively. Whenever you visit Palma de Mallorca, pack serious sun protection, plan hydration into every outing, and treat the midday hours as the sea's, not the city's.

@@ -1,0 +1,557 @@
+
+ === FILE: activity_rome_001.md ===
+
+ id: activity_rome_001
+ type: activity
+ city: Rome
+ country: Italy
+ category: culture
+ interests: [history, archaeology, architecture, photography]
+ targets: [family, couples, seniors, solo]
+ duration_min: 180
+ cost_level: high
+ indoor_outdoor: outdoor
+ booking_recommended: true
+
+ Description
+
+ The Colosseum & Roman Forum Guided Tour is the classic introduction to ancient Rome. Over roughly three hours, a licensed guide leads you through the Flavian Amphitheatre, where gladiatorial games once drew tens of thousands of spectators, then continues along the Via Sacra
+ into the Roman Forum, the political and religious heart of the ancient city. You will stand among the ruins of temples, basilicas and the Senate house while your guide reconstructs daily life in imperial Rome. The tour runs daily and its premium cost reflects expert guiding
+ and coordinated entry to two of the most visited monuments in Italy.
+
+ Who it's for
+
+ This tour suits families with older children who enjoy stories of gladiators and emperors, couples seeking a shared cultural highlight, and solo travellers who appreciate context they would miss alone. Seniors with reasonable mobility can manage the route, though the Forum's
+ uneven ancient paving requires steady footing. It is less ideal for very young children on hot afternoons.
+
+ Practical notes
+
+ Book well ahead, especially for June through September 2026, when demand in Rome peaks. The route is almost entirely outdoors and exposed: bring a hat, water and comfortable shoes. Mornings are cooler and quieter than midday. Large bags are not practical inside the
+ monuments.
+
+ === FILE: activity_rome_002.md ===
+
+ id: activity_rome_002
+ type: activity
+ city: Rome
+ country: Italy
+ category: culture
+ interests: [art, history, architecture]
+ targets: [couples, seniors, solo, young]
+ duration_min: 210
+ cost_level: medium
+ indoor_outdoor: indoor
+ booking_recommended: true
+
+ Description
+
+ The Vatican Museums & Sistine Chapel Timed Entry gives you access to one of the world's greatest art collections within Vatican City, a short walk across the Tiber from central Rome. Plan around three and a half hours to move through the Gallery of Maps, the Raphael Rooms
+ and the long sequence of sculpture courtyards and tapestry halls before reaching Michelangelo's Sistine Chapel ceiling, the undisputed climax of the visit. A timed entry slot keeps the experience manageable at a moderate cost level, and the itinerary operates daily. The
+ galleries are indoors, making this a strong choice when Roman afternoons turn hot.
+
+ Who it's for
+
+ Art lovers of every kind will find this rewarding: couples and solo travellers who want a deep cultural immersion, young travellers ticking off a bucket-list masterpiece, and seniors who prefer indoor corridors to sun-baked ruins. Families should gauge children's patience,
+ as the route is long and one-way.
+
+ Practical notes
+
+ Reserve your slot far in advance for summer 2026 visits to Rome; walk-in access is unreliable in peak season. Shoulders and knees must be covered in the chapel. Expect slow shuffling in the busiest halls and near-silence in the Sistine Chapel itself. Photography rules differ
+ by room, so follow posted signage.
+
+ === FILE: activity_rome_003.md ===
+
+ id: activity_rome_003
+ type: activity
+ city: Rome
+ country: Italy
+ category: food
+ interests: [food, wine, local-life, photography]
+ targets: [foodies, couples, young, solo]
+ duration_min: 180
+ cost_level: high
+ indoor_outdoor: mixed
+ booking_recommended: true
+
+ Description
+
+ The Trastevere Evening Food Tour winds through the ivy-draped lanes of Trastevere, Rome's most atmospheric dining quarter, over about three leisurely hours. A local host leads a small group from a family-run pizzeria to a historic deli, an artisan gelateria and a
+ neighbourhood enoteca, pairing tastings of supplì, cured meats, Roman-style pizza al taglio and regional wines with stories about the district's working-class roots and nightlife rebirth. The tour runs on Tuesdays, Thursdays and Saturdays, and its high cost level covers
+ generous tastings that comfortably replace dinner. Between stops you stroll cobbled streets around Piazza di Santa Maria in Trastevere as the evening lights come on.
+
+ Who it's for
+
+ Foodies who want to eat like Romans rather than tourists will get the most from this evening. It also suits couples looking for a sociable date-night experience, young travellers who enjoy meeting other guests, and solo diners who prefer company at the table. Come hungry and
+ unhurried.
+
+ Practical notes
+
+ Book ahead, as groups in Rome are deliberately small and weekend dates fill first. Wear comfortable shoes for cobblestones. Tell your host about dietary restrictions when reserving; vegetarian adaptations are usually possible, but the itinerary is built around classic Roman
+ flavours.
+
+ === FILE: activity_rome_004.md ===
+
+ id: activity_rome_004
+ type: activity
+ city: Rome
+ country: Italy
+ category: culture
+ interests: [art, architecture, photography]
+ targets: [couples, seniors, solo]
+ duration_min: 120
+ cost_level: low
+ indoor_outdoor: indoor
+ booking_recommended: true
+
+ Description
+
+ The Borghese Gallery Timed Entry offers two focused hours inside the Villa Borghese Pinciana, a seventeenth-century cardinal's palace set in the green heart of Rome. The collection is compact but extraordinary: Bernini's marble sculptures, including Apollo and Daphne, appear
+ to breathe, while Caravaggio's canvases anchor one of the finest painting collections in Italy. Canova, Raphael and Titian round out rooms decorated with frescoes and ancient mosaics. Because visits are organised in timed waves and capped in size, the gallery feels calm even
+ in high season, and the cost level stays low. Entry slots are offered daily.
+
+ Who it's for
+
+ This is a connoisseur's stop: couples who enjoy art without crowds, seniors who appreciate a manageable two-hour indoor visit with seating, and solo travellers drawn to Baroque Rome. Families with restless children may find the hushed rooms demanding; the surrounding gardens
+ make a better release valve afterwards.
+
+ Practical notes
+
+ Reservation is effectively essential in Rome, particularly for summer 2026, since each timed wave sells out. Arrive early to collect tickets and check bags, as large items must be stored. Combine the visit with a stroll in Villa Borghese park to stretch your legs before or
+ after your slot.
+
+ === FILE: activity_rome_005.md ===
+
+ id: activity_rome_005
+ type: activity
+ city: Rome
+ country: Italy
+ category: nightlife
+ interests: [photography, adventure, local-life]
+ targets: [couples, young, solo]
+ duration_min: 150
+ cost_level: high
+ indoor_outdoor: outdoor
+ booking_recommended: true
+
+ Description
+
+ The Evening Vespa Sidecar Tour lets you experience Rome the cinematic way: seated in a vintage-style sidecar while a local driver threads a classic Vespa through the illuminated city. Over about two and a half hours you glide past the floodlit Colosseum, sweep around Piazza
+ Venezia, climb to panoramic terraces above the rooftops and pause at quiet fountains most visitors never find after dark. Drivers double as informal guides, sharing anecdotes between rides, and the warm evening air replaces the daytime glare. The tour departs on Wednesdays,
+ Fridays and Saturdays, and its high cost level reflects the private sidecar format and expert local drivers.
+
+ Who it's for
+
+ Couples chasing a romantic, film-set evening will love this, as will young travellers and confident solo visitors who want Rome's nightlife skyline without a bar crawl. It is not suited to families with small children or travellers uneasy on two-wheeled transport, however
+ gentle the pace.
+
+ Practical notes
+
+ Book ahead for summer 2026 weekends, when Rome's evening tours are most requested. Helmets are provided; bring a light layer, as sidecar riding after sunset can feel breezy. Wear closed shoes and secure phones and cameras before departure. The itinerary may adapt to traffic
+ and city events.
+
+ === FILE: activity_rome_006.md ===
+
+ id: activity_rome_006
+ type: activity
+ city: Rome
+ country: Italy
+ category: sport
+ interests: [cycling, history, archaeology, nature]
+ targets: [sporty, young, couples]
+ duration_min: 240
+ cost_level: medium
+ indoor_outdoor: outdoor
+ booking_recommended: true
+
+ Description
+
+ The Appian Way E-Bike Ride follows the Via Appia Antica, the ancient Roman road once called the queen of roads, on a guided electric-bike loop lasting about four hours. Leaving the city walls behind, you pedal past umbrella pines, catacomb entrances, ruined tombs and
+ stretches of original basalt paving, with the open Roman countryside stretching toward the Castelli hills. The e-bike's assist makes the gently rolling terrain accessible without demanding race fitness, and regular stops let your guide unpack two thousand years of history.
+ The ride operates on Mondays, Wednesdays and Saturdays at a medium cost level that includes bike, helmet and guiding.
+
+ Who it's for
+
+ Sporty travellers who prefer active sightseeing to museum queues are the natural audience, along with young travellers and adventurous couples. Confident older riders comfortable on a bike will also enjoy it. It is not designed for young children or anyone unable to ride a
+ bicycle independently.
+
+ Practical notes
+
+ Reserve ahead, especially for June–September 2026 slots in Rome, and choose the earliest departure to beat the heat. Bring water, sunscreen and closed shoes; some sections run on uneven ancient stones. Sunday traffic restrictions on the Appian Way do not apply to the ride's
+ operating days, so expect occasional vehicles on shared stretches.
+
+ === FILE: activity_rome_007.md ===
+
+ id: activity_rome_007
+ type: activity
+ city: Rome
+ country: Italy
+ category: relax
+ interests: [nature, photography, local-life]
+ targets: [family, couples, seniors, relax-seekers]
+ duration_min: 120
+ cost_level: low
+ indoor_outdoor: outdoor
+ booking_recommended: false
+
+ Description
+
+ The Villa Borghese Gardens & Rowboat Lake experience is Rome's gentlest pause button. Spread across the city's largest central park, this two-hour wander moves along shaded avenues, past fountains and neoclassical temples, to the small lake below the Pincio terrace where
+ wooden rowboats drift around a landscaped island with a tiny temple at its centre. Renting a boat costs little, and simply sitting on a bench watching Roman families picnic is free. The gardens are open daily, with terraces offering sweeping views toward Piazza del Popolo
+ and the domes of the historic centre.
+
+ Who it's for
+
+ Families needing a break from monuments will find space for children to run, couples can share an unhurried rowboat hour, and seniors enjoy the flat, shaded paths. Relax-seekers rebuilding their energy between Rome's big sights should treat this as essential recovery time
+ rather than an optional extra.
+
+ Practical notes
+
+ No booking is needed; simply arrive with comfortable shoes and water. Boat rental operates in fair weather and daylight. Shade is generous but midday summer heat in Rome still bites, so mornings or late afternoons are pleasantest from June to September. Pair the visit with
+ the nearby Borghese Gallery if you hold a timed ticket.
+
+ === FILE: activity_rome_008.md ===
+
+ id: activity_rome_008
+ type: activity
+ city: Rome
+ country: Italy
+ category: food
+ interests: [food, local-life]
+ targets: [family, young, couples, foodies]
+ duration_min: 180
+ cost_level: medium
+ indoor_outdoor: indoor
+ booking_recommended: true
+
+ Description
+
+ The Pizza & Gelato Making Class is a hands-on three-hour session in a teaching kitchen in central Rome, where a friendly local instructor walks you through two Italian icons. First you learn the science of a proper pizza dough, stretch your own base and dress it with classic
+ toppings before sliding it into a hot oven. Then the group shifts to gelato, churning a batch from scratch and learning what separates authentic artisan gelato from industrial ice cream. The class runs on Mondays, Wednesdays and Fridays at a medium cost level, and you finish
+ by eating everything you made — lunch or dessert solved.
+
+ Who it's for
+
+ Families with children old enough to knead and stir get a memorable shared activity, young travellers enjoy the social, slightly messy fun, and couples can turn it into a playful date. Foodies gain techniques worth reproducing at home. The indoor, air-conditioned kitchen
+ also makes this a smart pick on Rome's hottest afternoons.
+
+ Practical notes
+
+ Book ahead, as class sizes in Rome are capped so everyone gets counter space. Mention allergies or dietary needs when reserving; gluten-free adaptations may be limited. Wear washable clothing and tie back long hair. Recipes and tips are shared, so you leave with skills as
+ well as a full stomach.
+
+ === FILE: activity_rome_009.md ===
+
+ id: activity_rome_009
+ type: activity
+ city: Rome
+ country: Italy
+ category: culture
+ interests: [history, archaeology]
+ targets: [seniors, solo, couples, family]
+ duration_min: 90
+ cost_level: low
+ indoor_outdoor: indoor
+ booking_recommended: true
+
+ Description
+
+ The Catacombs of San Callisto Visit descends into the largest of Rome's early Christian underground cemeteries, along the Appian Way southeast of the city centre. For about ninety minutes, a guided route follows narrow tufa corridors lined with tiered burial niches, leading
+ past frescoed chambers and the Crypt of the Popes, where several third-century pontiffs were laid to rest. The low cost level makes this one of Rome's most evocative budget cultural stops, and visits run daily. Below ground the air stays cool and constant, a striking
+ contrast to the sunlit Roman countryside above the entrance.
+
+ Who it's for
+
+ History-minded seniors, solo travellers and couples who like their archaeology atmospheric will find this deeply rewarding. Families with school-age children fascinated by hidden tunnels also do well; the confined corridors are less suitable for strollers or anyone
+ uncomfortable underground.
+
+ Practical notes
+
+ Visits are guided only, so book or arrive ready to join the next available group, particularly in busy summer 2026 periods. The temperature underground is noticeably cool and damp: carry a light layer even in August. Steps and low ceilings are part of the route. Combine the
+ visit with an Appian Way walk or ride while you are already outside the walls.
+
+ === FILE: activity_rome_010.md ===
+
+ id: activity_rome_010
+ type: activity
+ city: Rome
+ country: Italy
+ category: nature
+ interests: [photography, nature, local-life]
+ targets: [couples, young, solo, seniors]
+ duration_min: 90
+ cost_level: free
+ indoor_outdoor: outdoor
+ booking_recommended: false
+
+ Description
+
+ The Janiculum Hill Sunset Walk is Rome's finest free evening ritual. Rising above Trastevere on the west bank of the Tiber, the Gianicolo ridge carries a long panoramic terrace where the whole historic centre unfolds: domes, bell towers and rooftop terraces glowing amber as
+ the sun drops behind the city. This ninety-minute self-guided stroll climbs gentle lanes past the monumental fountain of the Acqua Paola, shaded promenades and the equestrian statue of Garibaldi, ending at the terrace for the light show. It is available daily and costs
+ nothing but the effort of the climb.
+
+ Who it's for
+
+ Couples get an unbeatable romantic backdrop, young travellers and solo photographers find their best skyline shots of Rome here, and seniors who take the gradient slowly can reach the main terrace without difficulty. Anyone recovering from a heavy museum day will appreciate
+ an evening that asks nothing but attention.
+
+ Practical notes
+
+ No booking is required; time your arrival for the half hour before sunset, which falls progressively earlier from June to September 2026. Wear shoes with grip for the descent after dusk, carry water for the climb, and keep valuables discreet at the busy terrace. Buses and a
+ steep but short walk from Trastevere both reach the ridge.
+
+ === FILE: activity_rome_011.md ===
+
+ id: activity_rome_011
+ type: activity
+ city: Rome
+ country: Italy
+ category: food
+ interests: [food, local-life, shopping]
+ targets: [foodies, young, solo, family]
+ duration_min: 120
+ cost_level: medium
+ indoor_outdoor: mixed
+ booking_recommended: false
+
+ Description
+
+ The Testaccio Market Street Food Crawl explores Rome's most proudly Roman food neighbourhood through its covered market hall and surrounding streets. Over roughly two hours you graze your way between stalls: a sandwich counter famous for slow-cooked Roman offal classics and
+ their gentler alternatives, a pasta workshop, produce vendors stacking artichokes and puntarelle in season, and a bakery whose pizza bianca disappears warm from the oven. Testaccio was historically the city's slaughterhouse district, and its cuisine — coda alla vaccinara,
+ tripe, rich ragùs — still tells that story. The crawl runs on Tuesdays, Thursdays and Saturdays at a medium cost level, with tastings paid stall by stall.
+
+ Who it's for
+
+ Foodies chasing authentic working-class Roman cooking rate this above any white-tablecloth meal. Young travellers and solo grazers love the informal format, and families can please picky eaters because everyone chooses their own stall. Curious eaters willing to try the
+ traditional fifth-quarter dishes get the fullest experience.
+
+ Practical notes
+
+ No reservation is needed; just arrive hungry in the earlier part of the day while stalls are fully stocked. Carry small cash for individual vendors. The hall is covered, but summer heat in Rome still lingers inside, so dress light. Combine the crawl with Testaccio's
+ riverside walks afterwards.
+
+ === FILE: hotel_rome_001.md ===
+
+ id: hotel_rome_001
+ type: hotel
+ city: Rome
+ country: Italy
+ tier: budget
+ max_guests_per_room: 2
+ amenities: [wifi, breakfast]
+ targets: [couples, solo, young]
+ cost_level: low
+
+ Description
+
+ B&B Aurelia is a small, family-run bed and breakfast in Rome's Prati district, on the Vatican side of the Tiber. Its handful of simply furnished rooms keep things quiet and personal, with a low cost level that leaves more budget for the city's tables and museums. A modest
+ Italian breakfast of coffee, pastries and fruit is included each morning, and reliable wifi covers the whole house. The hosts are happy to sketch walking routes toward St Peter's and the river bridges into the historic centre.
+
+ Who it's for
+
+ Couples and solo travellers watching their spending will feel at home, as will young travellers who value a local host's advice over hotel formality. Rooms sleep a maximum of two guests, so families needing extra beds should look elsewhere in Rome.
+
+ Practical notes
+
+ As a budget property, expect stairs rather than lifts and compact room sizes. Air conditioning is not among the amenities, so summer guests from June to September should ask for the coolest-facing room and plan midday breaks elsewhere. Breakfast hours are fixed but generous
+ enough for early sightseeing starts.
+
+ === FILE: hotel_rome_002.md ===
+
+ id: hotel_rome_002
+ type: hotel
+ city: Rome
+ country: Italy
+ tier: budget
+ max_guests_per_room: 2
+ amenities: [wifi, ac]
+ targets: [young, couples, solo]
+ cost_level: low
+
+ Description
+
+ Casa Navona puts you a short stroll from Piazza Navona, in the tangle of lanes that makes central Rome so addictive. This budget guesthouse occupies a floor of an old palazzo, with pared-back rooms, dependable wifi and — crucially for Roman summers — air conditioning in
+ every room. The low cost level reflects a lean offering: there is no included breakfast, but the surrounding streets overflow with cafés where a cappuccino and cornetto cost little. Pantheon, Campo de' Fiori and the Tiber bridges are all comfortably walkable from the front
+ door.
+
+ Who it's for
+
+ Young travellers, couples and solo explorers who want location above luxury are the ideal guests. Sleeping a maximum of two per room, it suits pairs rather than families. Those who like to start the day in a neighbourhood bar rather than a hotel dining room will barely
+ notice the missing breakfast.
+
+ Practical notes
+
+ Central Rome's historic buildings often mean stairs and small lifts; pack light. Evening street noise comes with the location, so light sleepers should request an interior-facing room. In August, the air conditioning makes this one of the more sensible budget choices in the
+ city centre.
+
+ === FILE: hotel_rome_003.md ===
+
+ id: hotel_rome_003
+ type: hotel
+ city: Rome
+ country: Italy
+ tier: mid
+ max_guests_per_room: 3
+ amenities: [wifi, breakfast, ac]
+ targets: [family, couples, foodies]
+ cost_level: medium
+
+ Description
+
+ Hotel Trastevere Verde sits on a quieter lane at the edge of Trastevere, Rome's favourite evening dining quarter, with a leafy internal courtyard that lives up to its name. The mid-tier property offers comfortable rooms with air conditioning, solid wifi and an included
+ breakfast built around fresh pastries, fruit and proper espresso. Rooms accommodate up to three guests, making it a practical base for small families. Step outside and you are minutes from Piazza di Santa Maria in Trastevere, the Janiculum climb and a dense concentration of
+ trattorias.
+
+ Who it's for
+
+ Couples who want atmosphere on the doorstep, foodies planning to eat their way through the district, and families of three will all find the balance of comfort and location appealing. The medium cost level buys genuine convenience without luxury pricing.
+
+ Practical notes
+
+ Trastevere has no metro station, so plan on trams, buses and walking to reach the Vatican or ancient centre. The neighbourhood is lively at night; courtyard-facing rooms are the quietest. Book well ahead for June–September 2026, when Rome's charming mid-range rooms disappear
+ early.
+
+ === FILE: hotel_rome_004.md ===
+
+ id: hotel_rome_004
+ type: hotel
+ city: Rome
+ country: Italy
+ tier: mid
+ max_guests_per_room: 2
+ amenities: [wifi, breakfast, ac, gym]
+ targets: [couples, sporty, solo]
+ cost_level: medium
+
+ Description
+
+ Residenza Borghese is a polished mid-tier hotel near the Villa Borghese gardens, on the elegant northern edge of central Rome. Rooms are calm and contemporary, with air conditioning, strong wifi and a breakfast spread that runs from yoghurt and fruit to eggs and cured meats.
+ A compact but well-equipped gym lets guests keep training routines alive between sightseeing days. The location trades postcard views for something arguably better: morning runs under the park's pines, the Borghese Gallery minutes away, and the Spanish Steps a pleasant walk
+ downhill.
+
+ Who it's for
+
+ Sporty travellers who want a gym and green running space, couples seeking a refined but not extravagant base, and solo business-leisure visitors will appreciate the setup. Rooms sleep a maximum of two, so this is a pairs-and-singles address rather than a family one.
+
+ Practical notes
+
+ The area is quieter at night than the historic core, which most guests count as a feature; dinner means a walk or short ride toward the centre. The nearby Spagna metro stop links you to the Termini hub. Reserve early for summer 2026 stays in Rome.
+
+ === FILE: hotel_rome_005.md ===
+
+ id: hotel_rome_005
+ type: hotel
+ city: Rome
+ country: Italy
+ tier: mid
+ max_guests_per_room: 3
+ amenities: [wifi, breakfast, ac, family-rooms]
+ targets: [family, seniors, couples]
+ cost_level: medium
+
+ Description
+
+ Hotel Colosseo Vista earns its name honestly: this mid-tier hotel in Rome's Monti-adjacent Celio area sits within easy walking distance of the Colosseum, with some rooms and the breakfast terrace looking straight toward the ancient amphitheatre. Family rooms are a core part
+ of the offer, sleeping up to three guests with proper beds rather than improvised extras. Air conditioning, wifi and an included breakfast round out a practical, well-run package at a medium cost level. The Roman Forum, Palatine slopes and Basilica of San Clemente are all
+ close enough for easy morning starts.
+
+ Who it's for
+
+ Families are the headline audience, thanks to dedicated family rooms and a location that minimises transport with children. Seniors benefit from the short, mostly level walks to major sights, and couples who want iconic views without five-star pricing fit comfortably too.
+
+ Practical notes
+
+ The Colosseo metro stop and several bus lines serve the area, though the immediate streets are calmer than the tourist crush suggests. Book far ahead for June–September 2026; view rooms in Rome's monument districts are the first to go. Request a high floor for the best
+ sightlines.
+
+ === FILE: hotel_rome_006.md ===
+
+ id: hotel_rome_006
+ type: hotel
+ city: Rome
+ country: Italy
+ tier: high
+ max_guests_per_room: 4
+ amenities: [wifi, breakfast, ac, spa, gym, family-rooms]
+ targets: [family, couples, relax-seekers, seniors]
+ cost_level: high
+
+ Description
+
+ Grand Hotel Palatino is Rome's full-service indulgence in this collection: a high-tier property between the Palatine and the Forum, where classical proportions meet plush contemporary comfort. The spa offers massages and a thermal circuit that feels heaven-sent after a day
+ on ancient paving, while the gym covers guests who prefer movement to stillness. Generous family rooms sleep up to four, breakfast is a lavish affair, and air conditioning and fast wifi run throughout. The high cost level buys space, service and the rare luxury of recovering
+ properly between Rome's demanding sightseeing days.
+
+ Who it's for
+
+ Families wanting room to breathe, couples on a milestone trip, relax-seekers who treat the spa as part of the itinerary, and seniors who value comfort and attentive service all fit naturally. This is the property for travellers who want Rome's intensity balanced by genuine
+ rest.
+
+ Practical notes
+
+ The location puts the Forum, Colosseum and Monti's wine bars within walking distance, with metro links nearby. Spa treatments should be reserved ahead, especially during the busy June–September 2026 window. August rates in Rome peak, so book early for the best room
+ categories.
+
+ === FILE: destination_rome.md ===
+
+ id: destination_rome
+ type: destination
+ city: Rome
+ country: Italy
+ tags: ["culture", "history", "touristy", "city"]
+ budget_level: medium
+ best_for: [family, couples, young, foodies]
+
+ Overview
+
+ Rome is Italy's capital and its most overwhelming open-air museum: three thousand years of history layered into a single walkable city. The Colosseum and Roman Forum anchor the ancient core, Vatican City holds Michelangelo and St Peter's across the river, and between them
+ lie baroque piazzas, Bernini fountains, medieval lanes and neighbourhoods — Trastevere, Monti, Testaccio — where daily Roman life continues around the monuments. This is a culture-and-history city first and foremost, dense, loud, grand and imperfect, with a food culture
+ serious enough to justify a trip on its own.
+
+ Vibe & who it suits
+
+ Choose Rome if you want immersion rather than repose. Compared with Italy's coastal destinations, Rome offers no beaches or slow seaside rhythm; its equivalent of a lazy afternoon is a park bench in Villa Borghese or a long lunch in Testaccio. It is genuinely touristy —
+ queues, crowds and souvenir stalls are part of the deal — but rewards those who book ahead and wander early or late. Families find endless storytelling material, couples get cinematic evenings, young travellers find nightlife and street energy, and foodies discover
+ carbonara, supplì and artisan gelato at the source. Travellers whose primary goal is swimming, spa resort idleness or empty landscapes should weigh a seaside or countryside Italian base instead, perhaps with Rome as a two- or three-day add-on. Budget expectations sit at a
+ medium level: entry fees and dining add up, but many of the city's greatest pleasures — piazzas, churches, hilltop sunsets — are free or inexpensive.
+
+ When to go
+
+ For the June–September 2026 window, expect real heat and real crowds. June brings long, warm evenings and manageable mornings; July and August are hot and humid, with August the peak for prices and domestic holiday crowds even as some local businesses take their own breaks.
+ September eases the temperature while keeping the long light. Plan indoor museums and classes for midday, monuments for early morning, and hills and riverside walks for evening.
+
+ Getting around
+
+ Rome's historic centre is best on foot, with the metro's limited lines and a dense bus and tram network filling the longer gaps. Two airports serve the city, both connected to the centre by rail or coach. Within the core, expect cobblestones, hills and pedestrian zones —
+ comfortable shoes matter more than any transport pass.
+
+ === FILE: guide_rome.md ===
+
+ id: guide_rome
+ type: guide
+ city: Rome
+ country: Italy
+ topics: [transport, food, seasonality, day-planning]
+
+ Transport
+
+ Rome is served by two airports: Fiumicino, the main international hub, linked to the centre by a direct express train to Termini station plus regional trains and coaches; and Ciampino, used mainly by low-cost carriers, connected by bus and rail combinations. Termini is the
+ city's rail and metro crossroads. The metro has only a few lines and skirts rather than penetrates the archaeological core, so buses, trams and walking do the real work. Validate tickets and expect surface traffic to be slow at rush hours. The historic centre is compact
+ enough to cross on foot in under an hour, and walking is genuinely the best way to see Rome — just budget for cobblestones, sampietrini, and the occasional hill. Taxis and ride apps are useful late at night; use official ranks rather than street hails.
+
+ Food
+
+ Roman cuisine is proud and specific: pasta classics like carbonara, cacio e pepe, gricia and amatriciana; fried supplì rice balls; thin pizza al taglio sold by weight; seasonal artichokes; and the offal-rich tradition of Testaccio for the curious. Start the day standing at a
+ bar with a cappuccino and cornetto, lunch simply, and dine later than northern Europeans expect — Roman evenings start late. Neighbourhood choice matters: Trastevere for atmosphere, Testaccio for tradition, Monti for wine bars. House wine in trattorias is usually decent and
+ inexpensive; tourist-menu restaurants with picture boards near monuments are best avoided. Gelato quality varies wildly — look for muted, natural colours rather than fluorescent piles.
+
+ Day-planning tips
+
+ Group sights geographically: ancient Rome (Colosseum, Forum, Palatine) fills one morning-to-early-afternoon block; the Vatican Museums and St Peter's deserve another; the baroque centre — Pantheon, Piazza Navona, Campo de' Fiori, Trevi — makes a walkable third. Book timed
+ entries for the Colosseum, Vatican Museums and Borghese Gallery well ahead, then build the rest of the day around those fixed anchors. Families should plan one major sight per day plus a park or gelato reward, and lean on hands-on activities like cooking classes. Young
+ travellers can push days longer, adding evening food tours, sidecar rides or the Janiculum sunset. Everyone should resist the urge to see everything: Rome rewards return visits.
+
+ Seasonality
+
+ From June to September 2026, Rome runs hot and busy. June offers the best balance of long evenings and tolerable mornings. July and August bring strong heat and humidity, with August the peak month for prices and crowds — book accommodation and major entries as early as
+ possible, and note that some family-run shops and restaurants close for their own holidays around mid-August. September softens the heat while crowds persist. In all summer months, structure days around the sun: monuments at opening, air-conditioned museums and classes at
+ midday, a proper rest, then piazzas, hills and riverside evenings. Carry water — the city's free drinking fountains, nasoni, are everywhere — and dress for church entry requirements: covered shoulders and knees.

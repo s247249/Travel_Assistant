@@ -1,0 +1,439 @@
+=== FILE: activity_barcelona_001.md ===
+---
+id: activity_barcelona_001
+type: activity
+city: Barcelona
+country: Spain
+category: culture
+interests: [architecture, history, art, photography]
+targets: [couples, families, seniors]
+duration_min: 120
+cost_level: medium
+indoor_outdoor: mixed
+booking_recommended: true
+---
+
+## Description
+The Sagrada Familia Timed Entry & Towers experience brings you inside Antoni Gaudi's unfinished basilica, the defining symbol of Barcelona. With a reserved entry slot you step into a forest of branching columns washed in coloured light from the stained-glass windows, then ride a lift up one of the towers for close views of the sculpted spires and the orderly grid of the Eixample district below. The visit pairs the contemplative nave with the drama of the Nativity and Passion facades, making it the essential cultural stop in the city.
+
+## Who it's for
+This visit suits couples drawn to romantic architecture, families with older children who can manage the tower stairs, and seniors comfortable with moderate walking. Architecture lovers and photographers will find endless detail in every surface, while first-time visitors to Barcelona get the single most memorable sight of the trip in one focused visit.
+
+## Practical notes
+The experience runs daily and lasts around two hours, so reserve the timed entry well ahead during the summer months. Tower access involves narrow spiral stairways on the way down and is not suitable for very young children or anyone uneasy with heights. Dress modestly for a working basilica, and pair the visit with a stroll along the nearby Gaudi avenues of the Eixample.
+
+=== FILE: activity_barcelona_002.md ===
+---
+id: activity_barcelona_002
+type: activity
+city: Barcelona
+country: Spain
+category: culture
+interests: [architecture, nature, photography]
+targets: [families, couples, young]
+duration_min: 120
+cost_level: low
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+Park Guell Timed Entry opens the gates to Gaudi's hillside garden city, one of Barcelona's most playful creations. The monumental core gathers the famous mosaic salamander on the stairway, the hypostyle hall of leaning columns, and the serpentine bench covered in trencadis tilework that curves around the main terrace. Beyond the ticketed zone, shaded pathways wind through viaducts and palm groves toward viewpoints that frame the whole city stretching down to the Mediterranean. It is architecture and parkland fused into a single open-air wander.
+
+## Who it's for
+Families appreciate the open spaces where children can burn energy between photo stops, couples enjoy the terrace at the softer light of late afternoon, and young travellers come for the iconic images. It also suits anyone who prefers sightseeing outdoors rather than in museums, though the slopes mean a reasonable level of fitness helps.
+
+## Practical notes
+Park Guell operates daily and a visit takes about two hours including the free surrounding paths. Timed entry controls numbers in the monumental zone, so booking ahead is wise in high season. The park sits on a hill in the Gracia side of Barcelona: wear comfortable shoes, bring water in summer, and seek the shaded upper walks when the midday sun is strong.
+
+=== FILE: activity_barcelona_003.md ===
+---
+id: activity_barcelona_003
+type: activity
+city: Barcelona
+country: Spain
+category: food
+interests: [food, history, local-life]
+targets: [foodies, couples, young]
+duration_min: 180
+cost_level: medium
+indoor_outdoor: mixed
+booking_recommended: true
+---
+
+## Description
+The Gothic Quarter Evening Tapas Tour threads Barcelona's oldest streets together with a series of tasting stops. A local guide leads a small group through the labyrinth of the Barri Gotic, past Roman walls, hidden squares and the cathedral cloister, pausing at family-run bars and classic tapas counters. Expect the Catalan canon done properly: pan con tomate, croquetas, cured meats, grilled seafood and a sweet finish, each paired with regional wine, cava or vermouth. Between bites, the guide unpacks centuries of history and the rituals of the Spanish evening table.
+
+## Who it's for
+Foodies who want context with their tasting will get the most from this tour, and it is an easy win for couples looking for a sociable evening. Young travellers enjoy the bar-hopping rhythm without having to navigate menus in Catalan. It suits curious eaters more than strict diets, though many stops can adapt with notice.
+
+## Practical notes
+The tour runs on Tuesdays, Thursdays and Saturdays and lasts around three hours, entirely at walking pace through mostly pedestrian streets. Come hungry: the stops add up to a full dinner. Booking ahead is recommended as groups are kept small, and comfortable shoes matter on the old cobblestones of Barcelona's Gothic Quarter.
+
+=== FILE: activity_barcelona_004.md ===
+---
+id: activity_barcelona_004
+type: activity
+city: Barcelona
+country: Spain
+category: sport
+interests: [sea, swimming, adventure]
+targets: [sporty, young]
+duration_min: 150
+cost_level: medium
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+The Barceloneta Paddle Surf Lesson turns Barcelona's city beach into an open-air gym. After a shore briefing on stance, balance and safety, an instructor guides the group onto stable beginner boards in the usually gentle water off Barceloneta. Most first-timers are kneeling within minutes and standing by the end of the session, gliding along the shoreline with the skyline of the W hotel and the port cranes as a backdrop. Falling in is part of the fun, and the Mediterranean is warm enough in summer to make every splash welcome.
+
+## Who it's for
+Sporty travellers and young visitors looking for an active morning will love this lesson, and it works well for adventurous beginners with basic swimming skills. It is a sociable option for friends travelling together, and a refreshing counterpoint to Barcelona's museum-heavy sightseeing.
+
+## Practical notes
+Sessions run daily and last about two and a half hours including the briefing and time on the water. All equipment is provided; bring swimwear, a towel and sunscreen. Booking ahead is recommended in summer. The lesson depends on sea conditions, so expect a reschedule if the wind picks up, and avoid heavy meals immediately beforehand.
+
+=== FILE: activity_barcelona_005.md ===
+---
+id: activity_barcelona_005
+type: activity
+city: Barcelona
+country: Spain
+category: nightlife
+interests: [music, art, local-life]
+targets: [couples, young, solo]
+duration_min: 90
+cost_level: medium
+indoor_outdoor: indoor
+booking_recommended: true
+---
+
+## Description
+The El Born Flamenco Show brings the intensity of Andalusian performance to an intimate venue in one of Barcelona's most atmospheric neighbourhoods. In a compact space where no seat feels far from the stage, a guitarist, singer and dancers deliver a set that moves from brooding solo cante to the thunder of footwork and swirling skirts. The format keeps the raw, close-up character of tablao flamenco: you hear the breath of the singer and feel the rhythm through the floor. It is an evening of pure emotion tucked into the medieval lanes of El Born.
+
+## Who it's for
+Couples looking for a memorable night out, young travellers curious about Spanish performing arts, and solo visitors who want a shared cultural experience without needing language all find their place here. Music and dance lovers rate it among Barcelona's most affecting evening options.
+
+## Practical notes
+Performances take place on Wednesdays, Fridays, Saturdays and Sundays and run about ninety minutes without an interval. Seating is limited, so booking ahead is recommended, especially in summer. Arrive a little early to settle in, and combine the show with a late dinner in El Born, where kitchens in Barcelona stay lively well into the night.
+
+=== FILE: activity_barcelona_006.md ===
+---
+id: activity_barcelona_006
+type: activity
+city: Barcelona
+country: Spain
+category: nature
+interests: [nature, photography, history]
+targets: [families, couples, seniors]
+duration_min: 150
+cost_level: low
+indoor_outdoor: outdoor
+booking_recommended: false
+---
+
+## Description
+The Montjuic Cable Car & Castle Views outing lifts you above Barcelona in a glass cabin that climbs the seaward flank of Montjuic hill. The glide itself is the attraction: the port, the cruise terminals and the full sweep of the city slide into view as the cable rises toward the summit. At the top, the star-shaped Montjuic Castle sits amid terraces and dry moats, with rampart walks that look out over the Mediterranean on one side and the dense grid of the Eixample on the other. Gardens and shaded paths soften the old fortress atmosphere.
+
+## Who it's for
+Families enjoy the novelty of the cable car and the open space at the summit, couples come for the panorama near sunset, and seniors appreciate big views without a strenuous climb. Photographers will want clear mornings for the sharpest light over Barcelona's harbour.
+
+## Practical notes
+The cable car and castle grounds operate daily, and the whole outing takes around two and a half hours at an easy pace. No advance booking is needed for a relaxed visit. Bring sun protection, as much of the summit is exposed, and consider walking down through the gardens toward the fountains if your knees are willing.
+
+=== FILE: activity_barcelona_007.md ===
+---
+id: activity_barcelona_007
+type: activity
+city: Barcelona
+country: Spain
+category: culture
+interests: [art, history]
+targets: [solo, couples, seniors]
+duration_min: 120
+cost_level: low
+indoor_outdoor: indoor
+booking_recommended: true
+---
+
+## Description
+Picasso Museum Entry unlocks the collection housed in a chain of medieval merchant palaces on Carrer Montcada in Barcelona's El Born district. The museum's strength is its depth on the artist's formative years: academic studies, Blue Period canvases and the complete Las Meninas series show how Picasso's eye developed long before cubism made him famous. The setting is half the pleasure, with stone courtyards, timber ceilings and narrow staircases linking the galleries. Because the artist's ties to Barcelona ran deep, the collection reads like a hometown portrait of a genius in the making.
+
+## Who it's for
+Solo travellers can linger over the early sketches at their own pace, couples enjoy combining art with an El Born evening, and seniors will find the compact layout manageable with rest stops in the courtyards. Art students and history lovers gain the most, though the human story engages general visitors too.
+
+## Practical notes
+The museum opens daily and a visit fills about two hours. Entry is timed and the historic rooms are small, so booking ahead avoids the worst queues in high season. Large bags are not practical inside. Afterwards, the arcaded streets of El Born and the nearby Santa Maria del Mar church make a natural continuation of the walk in Barcelona.
+
+=== FILE: activity_barcelona_008.md ===
+---
+id: activity_barcelona_008
+type: activity
+city: Barcelona
+country: Spain
+category: nightlife
+interests: [nightlife, music, photography]
+targets: [young, couples]
+duration_min: 180
+cost_level: medium
+indoor_outdoor: mixed
+booking_recommended: true
+---
+
+## Description
+The Rooftop Bar Crawl strings together Barcelona's best-loved terrace evenings in one guided night. A host leads a small group between hand-picked rooftops around the Eixample and the old town, each with its own character: one facing the illuminated Sagrada Familia, another above the cathedral roofs, a third with a pool deck and DJ. Drinks are ordered at each stop while the group trades travel stories against a backdrop of the city glittering below. It is sightseeing and nightlife blended, with the skyline doing the work of a guidebook.
+
+## Who it's for
+Young travellers wanting a ready-made social night are the core audience, and couples on a city break enjoy the romance of watching Barcelona light up from above. It suits confident walkers who like a dressed-up but relaxed atmosphere rather than loud clubs.
+
+## Practical notes
+The crawl runs on Fridays and Saturdays and lasts around three hours, with short walks between venues. Booking ahead is recommended because terrace capacity is limited. Smart-casual dress helps at the sleeker rooftops, and each stop's drinks are settled as you go. Pace yourself: the summer night air in Barcelona makes the climbs between terraces feel effortless.
+
+=== FILE: activity_barcelona_009.md ===
+---
+id: activity_barcelona_009
+type: activity
+city: Barcelona
+country: Spain
+category: nature
+interests: [hiking, nature, history]
+targets: [sporty, couples, seniors]
+duration_min: 300
+cost_level: high
+indoor_outdoor: outdoor
+booking_recommended: true
+---
+
+## Description
+The Montserrat Monastery Half-Day Trip escapes Barcelona for the serrated mountain that Catalans hold sacred. Transport climbs from the plain to the monastery perched among rounded pink conglomerate peaks, a landscape unlike anywhere else in the region. At the sanctuary, the visit takes in the basilica associated with the Black Madonna and the museum's surprising holdings, before free time opens the real highlight: the trails. Walks range from gentle paths between hermitages to the funicular-assisted climb toward Sant Jeroni, the summit that on clear days frames the Pyrenees and, far below, the sea near Barcelona.
+
+## Who it's for
+Sporty travellers will want the upper trails and summit push, couples enjoy the blend of scenery and culture, and seniors can stay on the level monastery paths and still leave fulfilled. It is the best choice for anyone who wants nature without giving up a full city day.
+
+## Practical notes
+The trip operates on Mondays, Wednesdays, Fridays and Sundays and takes about five hours door to door, so book ahead in summer. Mountain weather shifts quickly: bring layers, water and proper shoes even when Barcelona is hot. Choir performances and museum access vary by day, so treat them as a bonus rather than a guarantee.
+
+=== FILE: activity_barcelona_010.md ===
+---
+id: activity_barcelona_010
+type: activity
+city: Barcelona
+country: Spain
+category: nightlife
+interests: [food, wine, local-life]
+targets: [foodies, couples, young]
+duration_min: 120
+cost_level: medium
+indoor_outdoor: indoor
+booking_recommended: true
+---
+
+## Description
+The El Born Vermut & Cocktail Tasting introduces Barcelona's most cherished drinking ritual: la hora del vermut. Guided by a host through two characterful bars in El Born, the session starts with the Catalan classic itself, vermouth served over ice with an olive and orange slice, tasted side by side to reveal how botanicals, sweetness and bitterness differ between houses. Small snacks in the traditional style accompany the pours. The second half shifts gears to contemporary cocktails built on local spirits and vermouth bases, showing how Barcelona's bartenders reinterpret the aperitif for the modern night.
+
+## Who it's for
+Foodies and wine-curious travellers get a genuine slice of local culture, couples enjoy the unhurried, conversational format, and young travellers discover an alternative to club nights. It is ideal for anyone who wants to understand what Barcelonians actually drink before dinner.
+
+## Practical notes
+Tastings run on Thursdays, Fridays and Saturdays and last about two hours, seated or standing at the bar rather than walking far. Booking is recommended as groups stay small. The format includes alcohol throughout, so it is an adults-only experience. Arrive with an appetite for the snacks, and let the evening roll naturally into a late dinner nearby in El Born, Barcelona.
+
+=== FILE: activity_barcelona_011.md ===
+---
+id: activity_barcelona_011
+type: activity
+city: Barcelona
+country: Spain
+category: relax
+interests: [nature, photography, local-life]
+targets: [families, couples, relax-seekers]
+duration_min: 120
+cost_level: low
+indoor_outdoor: outdoor
+booking_recommended: false
+---
+
+## Description
+Ciutadella Park Picnic & Rowboats is Barcelona's gentlest pleasure: an afternoon in the green heart of the city. Parc de la Ciutadella spreads out from the monumental fountain touched by the young Gaudi, past lawns shaded by palms, a boating lake and the grand facade of the Catalan parliament. The plan is simple: gather bread, cheese, fruit and cava from a nearby market, claim a patch of grass, and drift afterward in a rowboat on the lake where herons stalk the shallows. Buskers, bubbles and shade make the hours dissolve, and the park's paths link easily to El Born and the waterfront.
+
+## Who it's for
+Families get space for children to roam safely, couples find a low-cost romantic hour on the water, and relax-seekers recover from museum marathons under the trees. It is the right choice whenever the group needs a pause rather than another queue.
+
+## Practical notes
+The park is open daily and the picnic-and-rowboat combination fills about two hours, though nobody minds if it stretches. No booking is needed; rowboats are taken as they come. Bring a blanket and sun protection, and buy supplies before entering. In peak summer, aim for late afternoon when Barcelona's heat softens and the lake turns gold.
+
+=== FILE: hotel_barcelona_001.md ===
+---
+id: hotel_barcelona_001
+type: hotel
+city: Barcelona
+country: Spain
+tier: budget
+max_guests_per_room: 2
+amenities: [wifi, ac]
+targets: [young, solo, couples]
+cost_level: low
+---
+
+## Description
+Hostal Gracia Sol is a simple, cheerful budget hostal in Barcelona's Gracia neighbourhood, a village-like pocket of pedestrian squares and independent cafes north of the Eixample. Rooms are compact and bright, sleeping up to two guests, with reliable wifi and air conditioning that matters in the Barcelona summer. The surrounding streets supply everything the hostal keeps lean: bakeries for breakfast, vermouth bars for the evening, and metro links that reach the Gothic Quarter quickly.
+
+## Who it's for
+Young travellers and solo visitors prioritising location and value over facilities will feel at home, and couples on a tight budget get a well-connected base with genuine neighbourhood character.
+
+## Practical notes
+Reception can help with luggage storage and local tips. Rooms face either quiet inner patios or lively lanes, so light sleepers should ask for the patio side. Gracia's squares host evening gatherings in summer, part of the charm of staying here in Barcelona.
+
+=== FILE: hotel_barcelona_002.md ===
+---
+id: hotel_barcelona_002
+type: hotel
+city: Barcelona
+country: Spain
+tier: budget
+max_guests_per_room: 3
+amenities: [wifi, ac, sea-view]
+targets: [young, families, sporty]
+cost_level: low
+---
+
+## Description
+Casa Barceloneta puts a budget stay steps from the sand in Barcelona's old fishermen's quarter. The guesthouse keeps things straightforward: tidy rooms for up to three guests, wifi throughout, air conditioning in every room, and select rooms with a sea view over the Mediterranean. Barceloneta itself is the attraction, a grid of narrow lanes hung with laundry, lined with seafood bars and opening directly onto the city's busiest beach. Morning swims before sightseeing become an easy habit here.
+
+## Who it's for
+Young beach-focused travellers, sporty visitors heading out for paddle sessions, and small families who want sand time without resort prices are the natural guests of Casa Barceloneta.
+
+## Practical notes
+Sea-view rooms are limited, so request one when reserving. The quarter is lively late into summer nights; earplugs help light sleepers. The beach, port promenade and metro into central Barcelona are all within a short walk.
+
+=== FILE: hotel_barcelona_003.md ===
+---
+id: hotel_barcelona_003
+type: hotel
+city: Barcelona
+country: Spain
+tier: mid
+max_guests_per_room: 2
+amenities: [wifi, breakfast, ac]
+targets: [couples, solo, foodies]
+cost_level: medium
+---
+
+## Description
+Hotel Born Central is a mid-range boutique hotel tucked into the medieval streets of El Born, one of Barcelona's most atmospheric districts. Rooms for up to two guests combine stone-and-timber character with modern comfort: air conditioning, dependable wifi and a breakfast spread that leans Catalan, with good bread, tomato, local cheese and coffee done properly. Step outside and the Picasso Museum, Santa Maria del Mar and a dense cluster of tapas bars and cocktail spots are all within a few minutes' wander.
+
+## Who it's for
+Couples on a city break, solo travellers who want evenings on the doorstep, and foodies planning to eat their way through El Born will find the location hard to beat.
+
+## Practical notes
+The streets around the hotel are pedestrian, so taxis set down nearby rather than at the door. Breakfast is included, making mornings simple before museum visits. Evenings in this part of Barcelona run late; ask for a room away from the liveliest lanes.
+
+=== FILE: hotel_barcelona_004.md ===
+---
+id: hotel_barcelona_004
+type: hotel
+city: Barcelona
+country: Spain
+tier: mid
+max_guests_per_room: 3
+amenities: [wifi, breakfast, ac, pool]
+targets: [families, couples, relax-seekers]
+cost_level: medium
+---
+
+## Description
+Hotel Eixample Garden brings a resort touch to the middle of Barcelona, set on a calm street in the Eixample grid among Modernist facades. Rooms sleep up to three guests and come with air conditioning and wifi, breakfast is included, and the centrepiece is a garden pool where the city's heat loses its edge. After a morning at the Sagrada Familia or Casa Batllo, both reachable on foot or a short metro hop, returning to a shaded lounger feels like a second holiday stitched into the first.
+
+## Who it's for
+Families needing a midday reset, couples who mix sightseeing with downtime, and relax-seekers who measure a trip by pool hours will all be well served here.
+
+## Practical notes
+The pool is seasonal in character, at its best from late spring through early autumn, exactly the June to September window. Breakfast is included; request a garden-facing room for quiet. The Eixample location keeps most of central Barcelona within easy reach.
+
+=== FILE: hotel_barcelona_005.md ===
+---
+id: hotel_barcelona_005
+type: hotel
+city: Barcelona
+country: Spain
+tier: mid
+max_guests_per_room: 3
+amenities: [wifi, breakfast, ac, gym]
+targets: [sporty, couples, families]
+cost_level: medium
+---
+
+## Description
+Hotel Mirador Montjuic sits on the lower slopes of Montjuic hill in Barcelona, trading beach proximity for space, greenery and views. Rooms accommodate up to three guests with air conditioning and wifi, breakfast is included, and a well-equipped gym supports training routines on the road. The hill itself is the hotel's extended garden: running paths through parks, the cable car up to the castle, and the Olympic ring all nearby, while the metro and buses connect down to the port and the old town in minutes.
+
+## Who it's for
+Sporty travellers who want morning runs and a real gym, couples drawn to quieter evenings with a panorama, and families needing extra space at a mid-range level are the ideal guests.
+
+## Practical notes
+The hillside setting means some uphill walking; buses soften the climb. Breakfast is included and the gym suits early sessions before Barcelona's heat builds. Ask for a high-floor room facing the city for the best evening views over the port.
+
+=== FILE: hotel_barcelona_006.md ===
+---
+id: hotel_barcelona_006
+type: hotel
+city: Barcelona
+country: Spain
+tier: high
+max_guests_per_room: 4
+amenities: [wifi, breakfast, ac, pool, spa, family-rooms]
+targets: [families, couples, relax-seekers]
+cost_level: high
+---
+
+## Description
+Grand Hotel Passeig de Gracia is Barcelona's indulgent address on the city's grandest boulevard, surrounded by flagship stores and Gaudi landmarks. The high-tier property offers family rooms sleeping up to four guests, a rooftop pool with views along the avenue, and a spa with treatment rooms and thermal circuit for serious unwinding. Breakfast is a generous included affair, air conditioning and wifi are standard throughout, and the service style is polished without stiffness. Casa Batllo and La Pedrera are a short stroll away, making this luxury with the sightseeing built into the doorstep.
+
+## Who it's for
+Families wanting space and facilities in one booking, couples celebrating something special, and relax-seekers who plan spa afternoons between gallery visits will find the Grand Hotel Passeig de Gracia fits perfectly.
+
+## Practical notes
+Book family rooms and spa treatments ahead for summer stays. The rooftop pool is the prime spot in the June to September heat, busiest mid-afternoon. The boulevard location puts metro lines, shopping and Barcelona's Modernist route within immediate reach.
+
+=== FILE: destination_barcelona.md ===
+---
+id: destination_barcelona
+type: destination
+city: Barcelona
+country: Spain
+tags: ["culture", "nightlife", "architecture", "city-beach"]
+budget_level: medium
+best_for: [young, couples, foodies]
+---
+
+## Overview
+Barcelona is Spain's Mediterranean showcase, a city where Gothic lanes, Modernist masterpieces and a working city beach share the same skyline. Gaudi's Sagrada Familia and Park Guell anchor a culture offer that spans Roman walls, the Picasso Museum and the grand Eixample grid, while Barceloneta's sand and the green slopes of Montjuic keep the outdoors within reach of every neighbourhood. Add a food culture built on markets, tapas counters and vermouth rituals, plus nightlife that runs from rooftop terraces to flamenco tablaos, and Barcelona delivers a complete city break without ever needing a car.
+
+## Vibe & who it suits
+The vibe is energetic, creative and outdoors: days split between monuments and sea, evenings stretching late over shared plates. Young travellers get beaches, rooftops and street life; couples get architecture, candlelit El Born dinners and sunset views from Montjuic; foodies get one of Europe's most rewarding eating cities. Families manage well with parks and beaches as pressure valves. Travellers seeking pure quiet resort relaxation should look to Spain's coastal towns instead; Barcelona is a medium-budget city break with culture first and sea as the bonus.
+
+## When to go
+For June to September 2026, expect warm to hot Mediterranean summer weather. June and early July bring long days and manageable crowds. August is the peak: hottest temperatures, densest visitor numbers and the highest prices, with some local businesses on holiday. September eases the heat while the sea stays warm, arguably the sweet spot. Book major timed entries and hotels well ahead for the whole window.
+
+## Getting around
+Barcelona rewards walking: the Gothic Quarter, El Born and the Eixample are best explored on foot. The metro covers longer hops efficiently, buses and the Montjuic cable car add scenic options, and the airport connects to the centre by train, metro and bus. Taxis are plentiful for late nights.
+
+=== FILE: guide_barcelona.md ===
+---
+id: guide_barcelona
+type: guide
+city: Barcelona
+country: Spain
+topics: [transport, food, seasonality, day-planning]
+---
+
+## Transport
+Barcelona is one of Europe's easiest cities to navigate without a car. From the airport, train and metro links reach the centre straightforwardly, with buses and taxis as alternatives; allow a comfortable margin after landing. Within the city, the metro is the workhorse for crossing districts, buses cover hillside routes toward Montjuic and Park Guell, and walking is genuinely the best option inside the Gothic Quarter, El Born and the Eixample grid, where distances between sights are short. Multi-journey travel cards suit stays of several days. Taxis are easy to find for late returns from rooftop bars or flamenco venues.
+
+## Food
+Eating is central to the Barcelona experience. Look for pan con tomate, patatas bravas, croquetas, grilled seafood and Catalan-style rice dishes, with vermouth as the traditional pre-dinner ritual and cava as the local sparkling wine. Market halls make excellent casual lunch stops, while El Born and Gracia concentrate characterful tapas bars. Remember the rhythm: lunch is the main meal in the early afternoon, dinner starts late by northern European standards, and kitchens in tourist-free pockets can close between services. Booking dinner tables ahead is sensible in summer.
+
+## Day-planning tips
+Group sights by neighbourhood to avoid criss-crossing the city: pair the Gothic Quarter with El Born and the Picasso Museum, the Eixample's Gaudi houses with the Sagrada Familia, and Montjuic's cable car, castle and gardens in one outing. Reserve timed entries for the Sagrada Familia and Park Guell well in advance, and slot them into cooler morning hours. Families should alternate one major sight with park or beach time, packing a Ciutadella picnic as a reset. Young travellers can stack daytime culture with evening tapas tours or rooftops, but keep one late morning free after big nights. Leave margin for spontaneous wandering; Barcelona's best moments are often unplanned.
+
+## Seasonality
+For June through September 2026, plan around the Mediterranean summer. June offers long daylight and moderate heat; July warms up with rising crowds. August is the peak on every axis: hottest weather, busiest attractions and the priciest hotels, though local neighbourhoods quieten as residents leave. September brings softer temperatures and a still-warm sea, ideal for combining beach and culture. Throughout the window, favour morning sightseeing, midday shade or pool time, and late dinners when Barcelona's streets come alive again.

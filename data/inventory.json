@@ -1,0 +1,1513 @@
+{
+  "meta": {
+    "seed": 42,
+    "months": [
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "season_start": "2026-06-01",
+    "season_end": "2026-09-30",
+    "note": "Synthetic demo data. Hotel names fictional. Regenerate with scripts/generate_inventory.py"
+  },
+  "airports": [
+    {
+      "code": "TRN",
+      "city": "Turin",
+      "country": "Italy"
+    },
+    {
+      "code": "MXP",
+      "city": "Milan",
+      "country": "Italy"
+    },
+    {
+      "code": "FCO",
+      "city": "Rome",
+      "country": "Italy"
+    },
+    {
+      "code": "NAP",
+      "city": "Naples",
+      "country": "Italy"
+    },
+    {
+      "code": "BCN",
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    {
+      "code": "PMI",
+      "city": "Palma de Mallorca",
+      "country": "Spain"
+    },
+    {
+      "code": "CDG",
+      "city": "Paris",
+      "country": "France"
+    },
+    {
+      "code": "INN",
+      "city": "Innsbruck",
+      "country": "Austria"
+    }
+  ],
+  "cities": [
+    {
+      "id": "rome",
+      "name": "Rome",
+      "country": "Italy",
+      "airport_code": "FCO",
+      "cost_index": 1.0,
+      "tags": [
+        "culture",
+        "history",
+        "touristy",
+        "city"
+      ]
+    },
+    {
+      "id": "naples",
+      "name": "Naples",
+      "country": "Italy",
+      "airport_code": "NAP",
+      "cost_index": 0.8,
+      "tags": [
+        "sea",
+        "food",
+        "niche",
+        "lively"
+      ]
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "country": "Spain",
+      "airport_code": "BCN",
+      "cost_index": 1.0,
+      "tags": [
+        "culture",
+        "nightlife",
+        "architecture",
+        "city-beach"
+      ]
+    },
+    {
+      "id": "palma",
+      "name": "Palma de Mallorca",
+      "country": "Spain",
+      "airport_code": "PMI",
+      "cost_index": 1.15,
+      "tags": [
+        "sea",
+        "relax",
+        "family",
+        "beach"
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "country": "France",
+      "airport_code": "CDG",
+      "cost_index": 1.3,
+      "tags": [
+        "culture",
+        "museums",
+        "luxury",
+        "touristy"
+      ]
+    },
+    {
+      "id": "innsbruck",
+      "name": "Innsbruck",
+      "country": "Austria",
+      "airport_code": "INN",
+      "cost_index": 1.1,
+      "tags": [
+        "mountain",
+        "sport",
+        "nature",
+        "niche"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "id": "hotel_rome_001",
+      "city_id": "rome",
+      "name": "B&B Aurelia",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast"
+      ],
+      "base_price_night": 67.38
+    },
+    {
+      "id": "hotel_rome_002",
+      "city_id": "rome",
+      "name": "Casa Navona",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "ac"
+      ],
+      "base_price_night": 47.45
+    },
+    {
+      "id": "hotel_rome_003",
+      "city_id": "rome",
+      "name": "Hotel Trastevere Verde",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac"
+      ],
+      "base_price_night": 132.68
+    },
+    {
+      "id": "hotel_rome_004",
+      "city_id": "rome",
+      "name": "Residenza Borghese",
+      "tier": "mid",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "gym"
+      ],
+      "base_price_night": 91.36
+    },
+    {
+      "id": "hotel_rome_005",
+      "city_id": "rome",
+      "name": "Hotel Colosseo Vista",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "family-rooms"
+      ],
+      "base_price_night": 92.49
+    },
+    {
+      "id": "hotel_rome_006",
+      "city_id": "rome",
+      "name": "Grand Hotel Palatino",
+      "tier": "high",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "spa",
+        "gym",
+        "family-rooms"
+      ],
+      "base_price_night": 297.57
+    },
+    {
+      "id": "hotel_naples_001",
+      "city_id": "naples",
+      "name": "B&B Partenope",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast"
+      ],
+      "base_price_night": 52.35
+    },
+    {
+      "id": "hotel_naples_002",
+      "city_id": "naples",
+      "name": "Casa Spaccanapoli",
+      "tier": "budget",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "ac"
+      ],
+      "base_price_night": 49.71
+    },
+    {
+      "id": "hotel_naples_003",
+      "city_id": "naples",
+      "name": "Hotel Chiaia Blu",
+      "tier": "mid",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "sea-view"
+      ],
+      "base_price_night": 81.47
+    },
+    {
+      "id": "hotel_naples_004",
+      "city_id": "naples",
+      "name": "Residenza del Golfo",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "sea-view"
+      ],
+      "base_price_night": 113.19
+    },
+    {
+      "id": "hotel_naples_005",
+      "city_id": "naples",
+      "name": "Hotel Lungomare Napoli",
+      "tier": "mid",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "family-rooms",
+        "sea-view"
+      ],
+      "base_price_night": 112.36
+    },
+    {
+      "id": "hotel_naples_006",
+      "city_id": "naples",
+      "name": "Grand Hotel Miramare",
+      "tier": "high",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "spa",
+        "sea-view",
+        "family-rooms"
+      ],
+      "base_price_night": 165.6
+    },
+    {
+      "id": "hotel_barcelona_001",
+      "city_id": "barcelona",
+      "name": "Hostal Gracia Sol",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "ac"
+      ],
+      "base_price_night": 57.98
+    },
+    {
+      "id": "hotel_barcelona_002",
+      "city_id": "barcelona",
+      "name": "Casa Barceloneta",
+      "tier": "budget",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "ac",
+        "sea-view"
+      ],
+      "base_price_night": 67.35
+    },
+    {
+      "id": "hotel_barcelona_003",
+      "city_id": "barcelona",
+      "name": "Hotel Born Central",
+      "tier": "mid",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac"
+      ],
+      "base_price_night": 144.12
+    },
+    {
+      "id": "hotel_barcelona_004",
+      "city_id": "barcelona",
+      "name": "Hotel Eixample Garden",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "pool"
+      ],
+      "base_price_night": 94.17
+    },
+    {
+      "id": "hotel_barcelona_005",
+      "city_id": "barcelona",
+      "name": "Hotel Mirador Montjuic",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "gym"
+      ],
+      "base_price_night": 150.27
+    },
+    {
+      "id": "hotel_barcelona_006",
+      "city_id": "barcelona",
+      "name": "Grand Hotel Passeig de Gracia",
+      "tier": "high",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "pool",
+        "spa",
+        "family-rooms"
+      ],
+      "base_price_night": 183.85
+    },
+    {
+      "id": "hotel_palma_001",
+      "city_id": "palma",
+      "name": "Hostal Casco Antiguo",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "ac"
+      ],
+      "base_price_night": 91.39
+    },
+    {
+      "id": "hotel_palma_002",
+      "city_id": "palma",
+      "name": "Casa Santa Catalina",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac"
+      ],
+      "base_price_night": 79.35
+    },
+    {
+      "id": "hotel_palma_003",
+      "city_id": "palma",
+      "name": "Hotel Cala Mayor",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "sea-view",
+        "pool"
+      ],
+      "base_price_night": 174.77
+    },
+    {
+      "id": "hotel_palma_004",
+      "city_id": "palma",
+      "name": "Residencia Badia de Palma",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "pool"
+      ],
+      "base_price_night": 149.25
+    },
+    {
+      "id": "hotel_palma_005",
+      "city_id": "palma",
+      "name": "Hotel Puerto Azul",
+      "tier": "mid",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "pool",
+        "family-rooms",
+        "sea-view"
+      ],
+      "base_price_night": 192.23
+    },
+    {
+      "id": "hotel_palma_006",
+      "city_id": "palma",
+      "name": "Grand Hotel Miramar Palma",
+      "tier": "high",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "pool",
+        "spa",
+        "family-rooms",
+        "sea-view"
+      ],
+      "base_price_night": 327.02
+    },
+    {
+      "id": "hotel_paris_001",
+      "city_id": "paris",
+      "name": "Hotel Canal Saint-Martin",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi"
+      ],
+      "base_price_night": 58.92
+    },
+    {
+      "id": "hotel_paris_002",
+      "city_id": "paris",
+      "name": "Maison Montmartre",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast"
+      ],
+      "base_price_night": 99.15
+    },
+    {
+      "id": "hotel_paris_003",
+      "city_id": "paris",
+      "name": "Hotel Jardin du Luxembourg",
+      "tier": "mid",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac"
+      ],
+      "base_price_night": 215.83
+    },
+    {
+      "id": "hotel_paris_004",
+      "city_id": "paris",
+      "name": "Residence Marais Bleue",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "family-rooms"
+      ],
+      "base_price_night": 171.67
+    },
+    {
+      "id": "hotel_paris_005",
+      "city_id": "paris",
+      "name": "Hotel Tour Eiffel Vue",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "gym"
+      ],
+      "base_price_night": 193.65
+    },
+    {
+      "id": "hotel_paris_006",
+      "city_id": "paris",
+      "name": "Grand Palace Opera",
+      "tier": "high",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "ac",
+        "spa",
+        "gym",
+        "family-rooms"
+      ],
+      "base_price_night": 285.39
+    },
+    {
+      "id": "hotel_innsbruck_001",
+      "city_id": "innsbruck",
+      "name": "Pension Alpenrose",
+      "tier": "budget",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast"
+      ],
+      "base_price_night": 60.14
+    },
+    {
+      "id": "hotel_innsbruck_002",
+      "city_id": "innsbruck",
+      "name": "Haus Innbrucke",
+      "tier": "budget",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "parking"
+      ],
+      "base_price_night": 51.26
+    },
+    {
+      "id": "hotel_innsbruck_003",
+      "city_id": "innsbruck",
+      "name": "Hotel Bergblick Innsbruck",
+      "tier": "mid",
+      "max_guests_per_room": 3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "sauna",
+        "ski-storage"
+      ],
+      "base_price_night": 169.68
+    },
+    {
+      "id": "hotel_innsbruck_004",
+      "city_id": "innsbruck",
+      "name": "Hotel Nordkettenblick",
+      "tier": "mid",
+      "max_guests_per_room": 2,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "sauna",
+        "parking"
+      ],
+      "base_price_night": 147.31
+    },
+    {
+      "id": "hotel_innsbruck_005",
+      "city_id": "innsbruck",
+      "name": "Alpenhotel Talstation",
+      "tier": "mid",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "sauna",
+        "ski-storage",
+        "family-rooms"
+      ],
+      "base_price_night": 139.13
+    },
+    {
+      "id": "hotel_innsbruck_006",
+      "city_id": "innsbruck",
+      "name": "Grand Hotel Europa Tirol",
+      "tier": "high",
+      "max_guests_per_room": 4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "spa",
+        "sauna",
+        "ski-storage",
+        "family-rooms"
+      ],
+      "base_price_night": 356.82
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity_rome_001",
+      "city_id": "rome",
+      "name": "Colosseum & Roman Forum Guided Tour",
+      "category": "culture",
+      "duration_min": 180,
+      "base_price": 61.06,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_rome_002",
+      "city_id": "rome",
+      "name": "Vatican Museums & Sistine Chapel Timed Entry",
+      "category": "culture",
+      "duration_min": 210,
+      "base_price": 25.08,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_rome_003",
+      "city_id": "rome",
+      "name": "Trastevere Evening Food Tour",
+      "category": "food",
+      "duration_min": 180,
+      "base_price": 74.32,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_rome_004",
+      "city_id": "rome",
+      "name": "Borghese Gallery Timed Entry",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 19.47,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_rome_005",
+      "city_id": "rome",
+      "name": "Evening Vespa Sidecar Tour",
+      "category": "nightlife",
+      "duration_min": 150,
+      "base_price": 77.79,
+      "operating_days": [
+        "wed",
+        "fri",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_rome_006",
+      "city_id": "rome",
+      "name": "Appian Way E-Bike Ride",
+      "category": "sport",
+      "duration_min": 240,
+      "base_price": 50.83,
+      "operating_days": [
+        "mon",
+        "wed",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_rome_007",
+      "city_id": "rome",
+      "name": "Villa Borghese Gardens & Rowboat Lake",
+      "category": "relax",
+      "duration_min": 120,
+      "base_price": 9.87,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_rome_008",
+      "city_id": "rome",
+      "name": "Pizza & Gelato Making Class",
+      "category": "food",
+      "duration_min": 180,
+      "base_price": 53.32,
+      "operating_days": [
+        "mon",
+        "wed",
+        "fri"
+      ]
+    },
+    {
+      "id": "activity_rome_009",
+      "city_id": "rome",
+      "name": "Catacombs of San Callisto Visit",
+      "category": "culture",
+      "duration_min": 90,
+      "base_price": 16.0,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_rome_010",
+      "city_id": "rome",
+      "name": "Janiculum Hill Sunset Walk",
+      "category": "nature",
+      "duration_min": 90,
+      "base_price": 0.0,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_rome_011",
+      "city_id": "rome",
+      "name": "Testaccio Market Street Food Crawl",
+      "category": "food",
+      "duration_min": 120,
+      "base_price": 48.32,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_naples_001",
+      "city_id": "naples",
+      "name": "Pompeii Ruins Half-Day Trip",
+      "category": "culture",
+      "duration_min": 300,
+      "base_price": 39.03,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_naples_002",
+      "city_id": "naples",
+      "name": "Spaccanapoli Old Town Walking Tour",
+      "category": "culture",
+      "duration_min": 150,
+      "base_price": 16.03,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_naples_003",
+      "city_id": "naples",
+      "name": "Pizza Margherita Masterclass",
+      "category": "food",
+      "duration_min": 150,
+      "base_price": 30.6,
+      "operating_days": [
+        "mon",
+        "wed",
+        "fri"
+      ]
+    },
+    {
+      "id": "activity_naples_004",
+      "city_id": "naples",
+      "name": "Capri & Blue Grotto Boat Day Trip",
+      "category": "nature",
+      "duration_min": 480,
+      "base_price": 71.51,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_naples_005",
+      "city_id": "naples",
+      "name": "Napoli Sotterranea Underground Tour",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 9.71,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_naples_006",
+      "city_id": "naples",
+      "name": "Lungomare Seafront Sunset Stroll",
+      "category": "relax",
+      "duration_min": 90,
+      "base_price": 0.0,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_naples_007",
+      "city_id": "naples",
+      "name": "Castel dell'Ovo & Borgo Marinaro Visit",
+      "category": "culture",
+      "duration_min": 90,
+      "base_price": 4.64,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_naples_008",
+      "city_id": "naples",
+      "name": "Mount Vesuvius Crater Hike",
+      "category": "sport",
+      "duration_min": 240,
+      "base_price": 35.46,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_naples_009",
+      "city_id": "naples",
+      "name": "Amalfi Coast & Positano Day Trip",
+      "category": "nature",
+      "duration_min": 480,
+      "base_price": 64.27,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat",
+        "sun"
+      ]
+    },
+    {
+      "id": "activity_naples_010",
+      "city_id": "naples",
+      "name": "Quartieri Spagnoli Street Art Tour",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 23.82,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_naples_011",
+      "city_id": "naples",
+      "name": "Chiaia Beach Club Day",
+      "category": "relax",
+      "duration_min": 300,
+      "base_price": 33.91,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_barcelona_001",
+      "city_id": "barcelona",
+      "name": "Sagrada Familia Timed Entry & Towers",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 34.86,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_barcelona_002",
+      "city_id": "barcelona",
+      "name": "Park Guell Timed Entry",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 16.84,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_barcelona_003",
+      "city_id": "barcelona",
+      "name": "Gothic Quarter Evening Tapas Tour",
+      "category": "food",
+      "duration_min": 180,
+      "base_price": 45.39,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_barcelona_004",
+      "city_id": "barcelona",
+      "name": "Barceloneta Paddle Surf Lesson",
+      "category": "sport",
+      "duration_min": 150,
+      "base_price": 51.45,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_barcelona_005",
+      "city_id": "barcelona",
+      "name": "El Born Flamenco Show",
+      "category": "nightlife",
+      "duration_min": 90,
+      "base_price": 38.93,
+      "operating_days": [
+        "wed",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    },
+    {
+      "id": "activity_barcelona_006",
+      "city_id": "barcelona",
+      "name": "Montjuic Cable Car & Castle Views",
+      "category": "nature",
+      "duration_min": 150,
+      "base_price": 18.7,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_barcelona_007",
+      "city_id": "barcelona",
+      "name": "Picasso Museum Entry",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 17.71,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_barcelona_008",
+      "city_id": "barcelona",
+      "name": "Rooftop Bar Crawl",
+      "category": "nightlife",
+      "duration_min": 180,
+      "base_price": 41.72,
+      "operating_days": [
+        "fri",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_barcelona_009",
+      "city_id": "barcelona",
+      "name": "Montserrat Monastery Half-Day Trip",
+      "category": "nature",
+      "duration_min": 300,
+      "base_price": 66.37,
+      "operating_days": [
+        "mon",
+        "wed",
+        "fri",
+        "sun"
+      ]
+    },
+    {
+      "id": "activity_barcelona_010",
+      "city_id": "barcelona",
+      "name": "El Born Vermut & Cocktail Tasting",
+      "category": "nightlife",
+      "duration_min": 120,
+      "base_price": 30.66,
+      "operating_days": [
+        "thu",
+        "fri",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_barcelona_011",
+      "city_id": "barcelona",
+      "name": "Ciutadella Park Picnic & Rowboats",
+      "category": "relax",
+      "duration_min": 120,
+      "base_price": 4.01,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_palma_001",
+      "city_id": "palma",
+      "name": "Palma Cathedral (La Seu) Entry",
+      "category": "culture",
+      "duration_min": 90,
+      "base_price": 11.58,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_palma_002",
+      "city_id": "palma",
+      "name": "Catamaran Cove & Snorkel Cruise",
+      "category": "relax",
+      "duration_min": 300,
+      "base_price": 85.17,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_palma_003",
+      "city_id": "palma",
+      "name": "Serra de Tramuntana Guided Hike",
+      "category": "sport",
+      "duration_min": 300,
+      "base_price": 58.95,
+      "operating_days": [
+        "mon",
+        "wed",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_palma_004",
+      "city_id": "palma",
+      "name": "Playa de Palma Beach Club Day",
+      "category": "relax",
+      "duration_min": 300,
+      "base_price": 48.86,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_palma_005",
+      "city_id": "palma",
+      "name": "Old Town & Patios Walking Tour",
+      "category": "culture",
+      "duration_min": 150,
+      "base_price": 32.86,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_palma_006",
+      "city_id": "palma",
+      "name": "Bellver Castle & Forest Walk",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 9.32,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_palma_007",
+      "city_id": "palma",
+      "name": "Sunset Sailing Trip",
+      "category": "relax",
+      "duration_min": 180,
+      "base_price": 72.82,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_palma_008",
+      "city_id": "palma",
+      "name": "Mountain E-Bike Tour",
+      "category": "sport",
+      "duration_min": 240,
+      "base_price": 48.05,
+      "operating_days": [
+        "mon",
+        "wed",
+        "fri"
+      ]
+    },
+    {
+      "id": "activity_palma_009",
+      "city_id": "palma",
+      "name": "Santa Catalina Wine & Tapas Tasting",
+      "category": "food",
+      "duration_min": 150,
+      "base_price": 46.51,
+      "operating_days": [
+        "wed",
+        "fri",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_palma_010",
+      "city_id": "palma",
+      "name": "Es Baluard Modern Art Museum",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 10.19,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_palma_011",
+      "city_id": "palma",
+      "name": "Formentor Cape & Beach Day Trip",
+      "category": "nature",
+      "duration_min": 420,
+      "base_price": 52.35,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat",
+        "sun"
+      ]
+    },
+    {
+      "id": "activity_paris_001",
+      "city_id": "paris",
+      "name": "Louvre Timed Entry & Highlights Tour",
+      "category": "culture",
+      "duration_min": 210,
+      "base_price": 43.55,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_paris_002",
+      "city_id": "paris",
+      "name": "Eiffel Tower Summit Access",
+      "category": "culture",
+      "duration_min": 150,
+      "base_price": 46.24,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_paris_003",
+      "city_id": "paris",
+      "name": "Seine Evening Dinner Cruise",
+      "category": "food",
+      "duration_min": 180,
+      "base_price": 142.29,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_paris_004",
+      "city_id": "paris",
+      "name": "Montmartre & Sacre-Coeur Walking Tour",
+      "category": "culture",
+      "duration_min": 150,
+      "base_price": 41.96,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_paris_005",
+      "city_id": "paris",
+      "name": "Versailles Palace Day Trip",
+      "category": "culture",
+      "duration_min": 360,
+      "base_price": 77.32,
+      "operating_days": [
+        "mon",
+        "wed",
+        "fri",
+        "sun"
+      ]
+    },
+    {
+      "id": "activity_paris_006",
+      "city_id": "paris",
+      "name": "Luxembourg Gardens & Latin Quarter Stroll",
+      "category": "relax",
+      "duration_min": 120,
+      "base_price": 0.0,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_paris_007",
+      "city_id": "paris",
+      "name": "Marais Food & Wine Tasting Tour",
+      "category": "food",
+      "duration_min": 180,
+      "base_price": 104.1,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_paris_008",
+      "city_id": "paris",
+      "name": "Moulin Rouge Cabaret Show",
+      "category": "nightlife",
+      "duration_min": 150,
+      "base_price": 124.7,
+      "operating_days": [
+        "wed",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    },
+    {
+      "id": "activity_paris_009",
+      "city_id": "paris",
+      "name": "Catacombs of Paris Entry",
+      "category": "culture",
+      "duration_min": 90,
+      "base_price": 24.63,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_paris_010",
+      "city_id": "paris",
+      "name": "Canal Saint-Martin Picnic & Petanque",
+      "category": "relax",
+      "duration_min": 150,
+      "base_price": 17.82,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_paris_011",
+      "city_id": "paris",
+      "name": "Bois de Boulogne Bike Ride",
+      "category": "sport",
+      "duration_min": 180,
+      "base_price": 29.58,
+      "operating_days": [
+        "mon",
+        "wed",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_innsbruck_001",
+      "city_id": "innsbruck",
+      "name": "Nordkette Cable Car to Hafelekar",
+      "category": "nature",
+      "duration_min": 240,
+      "base_price": 52.13,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_innsbruck_002",
+      "city_id": "innsbruck",
+      "name": "Alpine Half-Day Guided Hike",
+      "category": "sport",
+      "duration_min": 300,
+      "base_price": 53.79,
+      "operating_days": [
+        "mon",
+        "wed",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_innsbruck_003",
+      "city_id": "innsbruck",
+      "name": "Old Town & Golden Roof Walking Tour",
+      "category": "culture",
+      "duration_min": 120,
+      "base_price": 19.05,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_innsbruck_004",
+      "city_id": "innsbruck",
+      "name": "Ambras Castle & Gardens Entry",
+      "category": "culture",
+      "duration_min": 150,
+      "base_price": 14.45,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_innsbruck_005",
+      "city_id": "innsbruck",
+      "name": "Mountain Bike Downhill Intro Session",
+      "category": "sport",
+      "duration_min": 240,
+      "base_price": 63.49,
+      "operating_days": [
+        "tue",
+        "thu",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_innsbruck_006",
+      "city_id": "innsbruck",
+      "name": "Bergisel Ski Jump & Panorama Walk",
+      "category": "sport",
+      "duration_min": 120,
+      "base_price": 11.65,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_innsbruck_007",
+      "city_id": "innsbruck",
+      "name": "Tyrolean Evening Show with Dinner",
+      "category": "nightlife",
+      "duration_min": 180,
+      "base_price": 50.98,
+      "operating_days": [
+        "wed",
+        "fri",
+        "sat"
+      ]
+    },
+    {
+      "id": "activity_innsbruck_008",
+      "city_id": "innsbruck",
+      "name": "Alpenzoo Alpine Zoo Visit",
+      "category": "nature",
+      "duration_min": 150,
+      "base_price": 14.59,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_innsbruck_009",
+      "city_id": "innsbruck",
+      "name": "Swarovski Crystal Worlds Day Trip",
+      "category": "culture",
+      "duration_min": 240,
+      "base_price": 28.32,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_innsbruck_010",
+      "city_id": "innsbruck",
+      "name": "Inn River Promenade & Sunset Picnic",
+      "category": "relax",
+      "duration_min": 120,
+      "base_price": 0.0,
+      "operating_days": "daily"
+    },
+    {
+      "id": "activity_innsbruck_011",
+      "city_id": "innsbruck",
+      "name": "Stubai Glacier Panorama Day Trip",
+      "category": "nature",
+      "duration_min": 420,
+      "base_price": 91.88,
+      "operating_days": [
+        "mon",
+        "wed",
+        "fri",
+        "sun"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "from": "TRN",
+      "to": "FCO",
+      "frequency": "daily"
+    },
+    {
+      "from": "FCO",
+      "to": "TRN",
+      "frequency": "daily"
+    },
+    {
+      "from": "TRN",
+      "to": "NAP",
+      "frequency": "daily"
+    },
+    {
+      "from": "NAP",
+      "to": "TRN",
+      "frequency": "daily"
+    },
+    {
+      "from": "TRN",
+      "to": "BCN",
+      "frequency": "daily"
+    },
+    {
+      "from": "BCN",
+      "to": "TRN",
+      "frequency": "daily"
+    },
+    {
+      "from": "TRN",
+      "to": "PMI",
+      "frequency": "daily"
+    },
+    {
+      "from": "PMI",
+      "to": "TRN",
+      "frequency": "daily"
+    },
+    {
+      "from": "TRN",
+      "to": "CDG",
+      "frequency": "daily"
+    },
+    {
+      "from": "CDG",
+      "to": "TRN",
+      "frequency": "daily"
+    },
+    {
+      "from": "TRN",
+      "to": "INN",
+      "frequency": "tue/thu/sat"
+    },
+    {
+      "from": "INN",
+      "to": "TRN",
+      "frequency": "tue/thu/sat"
+    },
+    {
+      "from": "MXP",
+      "to": "FCO",
+      "frequency": "daily"
+    },
+    {
+      "from": "FCO",
+      "to": "MXP",
+      "frequency": "daily"
+    },
+    {
+      "from": "MXP",
+      "to": "NAP",
+      "frequency": "daily"
+    },
+    {
+      "from": "NAP",
+      "to": "MXP",
+      "frequency": "daily"
+    },
+    {
+      "from": "MXP",
+      "to": "BCN",
+      "frequency": "daily"
+    },
+    {
+      "from": "BCN",
+      "to": "MXP",
+      "frequency": "daily"
+    },
+    {
+      "from": "MXP",
+      "to": "PMI",
+      "frequency": "daily"
+    },
+    {
+      "from": "PMI",
+      "to": "MXP",
+      "frequency": "daily"
+    },
+    {
+      "from": "MXP",
+      "to": "CDG",
+      "frequency": "daily"
+    },
+    {
+      "from": "CDG",
+      "to": "MXP",
+      "frequency": "daily"
+    },
+    {
+      "from": "MXP",
+      "to": "INN",
+      "frequency": "tue/thu/sat"
+    },
+    {
+      "from": "INN",
+      "to": "MXP",
+      "frequency": "tue/thu/sat"
+    },
+    {
+      "from": "FCO",
+      "to": "NAP",
+      "frequency": "daily"
+    },
+    {
+      "from": "NAP",
+      "to": "FCO",
+      "frequency": "daily"
+    },
+    {
+      "from": "FCO",
+      "to": "BCN",
+      "frequency": "daily"
+    },
+    {
+      "from": "BCN",
+      "to": "FCO",
+      "frequency": "daily"
+    },
+    {
+      "from": "FCO",
+      "to": "PMI",
+      "frequency": "daily"
+    },
+    {
+      "from": "PMI",
+      "to": "FCO",
+      "frequency": "daily"
+    },
+    {
+      "from": "FCO",
+      "to": "CDG",
+      "frequency": "daily"
+    },
+    {
+      "from": "CDG",
+      "to": "FCO",
+      "frequency": "daily"
+    },
+    {
+      "from": "FCO",
+      "to": "INN",
+      "frequency": "tue/thu/sat"
+    },
+    {
+      "from": "INN",
+      "to": "FCO",
+      "frequency": "tue/thu/sat"
+    }
+  ]
+}

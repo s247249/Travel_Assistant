@@ -1,0 +1,243 @@
+[
+  {
+    "id": "q01",
+    "query": "Which city is best for a laid-back beach holiday with kids?",
+    "expected_hits": [
+      "destination_palma"
+    ],
+    "filters": {
+      "type": "destination"
+    },
+    "tests": "destination-choice + family beach/relax semantics, type-only filter"
+  },
+  {
+    "id": "q02",
+    "query": "I want mountains and outdoor adventures, which city should I pick?",
+    "expected_hits": [
+      "destination_innsbruck"
+    ],
+    "filters": {
+      "type": "destination"
+    },
+    "tests": "destination-choice + mountain/sport semantics, type-only filter"
+  },
+  {
+    "id": "q03",
+    "query": "ancient ruins and gladiator history tour for the whole family",
+    "expected_hits": [
+      "activity_rome_001"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Rome",
+      "target": "family"
+    },
+    "tests": "city + family target + ancient-history culture semantics"
+  },
+  {
+    "id": "q04",
+    "query": "quiet green escape to row a boat and unwind",
+    "expected_hits": [
+      "activity_rome_007"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Rome",
+      "category": "relax",
+      "cost_level": "low"
+    },
+    "tests": "city + relax category + low budget + park/boating semantics"
+  },
+  {
+    "id": "q05",
+    "query": "learn to make authentic pizza together with my children",
+    "expected_hits": [
+      "activity_naples_003"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Naples",
+      "category": "food",
+      "target": "family"
+    },
+    "tests": "city + food category + family target + cooking-class semantics"
+  },
+  {
+    "id": "q06",
+    "query": "slow evenings watching the sun drop into the sea",
+    "expected_hits": [
+      "activity_naples_006",
+      "activity_naples_011"
+    ],
+    "filters": {
+      "type": "activity",
+      "country": "Italy",
+      "category": "relax",
+      "target": "relax-seekers"
+    },
+    "tests": "nation-level + relax-seekers target + seaside sunset semantics"
+  },
+  {
+    "id": "q07",
+    "query": "try standing on a paddle board in the ocean waves",
+    "expected_hits": [
+      "activity_barcelona_004"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Barcelona",
+      "target": "sporty"
+    },
+    "tests": "city + sporty target + water-sport paraphrase semantics"
+  },
+  {
+    "id": "q08",
+    "query": "drinks with a view hopping between terraces above the rooftops",
+    "expected_hits": [
+      "activity_barcelona_008",
+      "activity_barcelona_010"
+    ],
+    "filters": {
+      "type": "activity",
+      "country": "Spain",
+      "category": "nightlife",
+      "target": "young"
+    },
+    "tests": "nation-level + nightlife category + young target + rooftop-bar semantics"
+  },
+  {
+    "id": "q09",
+    "query": "gentle boat outing to swim in hidden bays with the kids",
+    "expected_hits": [
+      "activity_palma_002"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Palma de Mallorca",
+      "target": "family"
+    },
+    "tests": "city + family target + snorkeling/cove cruise semantics"
+  },
+  {
+    "id": "q10",
+    "query": "splurge on a luxurious stay to fully unwind as a couple",
+    "expected_hits": [
+      "hotel_palma_006"
+    ],
+    "filters": {
+      "type": "hotel",
+      "city": "Palma de Mallorca",
+      "tier": "high",
+      "target": "couples"
+    },
+    "tests": "hotel + city + high tier + couples target + luxury-relax semantics"
+  },
+  {
+    "id": "q11",
+    "query": "romantic dinner floating along the river under the lights",
+    "expected_hits": [
+      "activity_paris_003"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Paris",
+      "category": "food",
+      "target": "couples"
+    },
+    "tests": "city + food category + couples target + dinner-cruise paraphrase"
+  },
+  {
+    "id": "q12",
+    "query": "leisurely garden wandering without spending a euro",
+    "expected_hits": [
+      "activity_paris_006"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Paris",
+      "cost_level": "free",
+      "target": "seniors"
+    },
+    "tests": "city + free budget + seniors target + garden-stroll semantics"
+  },
+  {
+    "id": "q13",
+    "query": "adrenaline rush riding downhill trails on two wheels",
+    "expected_hits": [
+      "activity_innsbruck_005"
+    ],
+    "filters": {
+      "type": "activity",
+      "city": "Innsbruck",
+      "category": "sport",
+      "target": "sporty"
+    },
+    "tests": "city + sport category + sporty target + downhill-biking semantics"
+  },
+  {
+    "id": "q14",
+    "query": "practical advice on local transport and planning my days",
+    "expected_hits": [
+      "guide_innsbruck"
+    ],
+    "filters": {
+      "type": "guide",
+      "city": "Innsbruck"
+    },
+    "tests": "guide type + city filter + transport/day-planning topic semantics"
+  },
+  {
+    "id": "q15",
+    "query": "grazing through market stalls and tasting regional street snacks",
+    "expected_hits": [
+      "activity_rome_011",
+      "activity_rome_003"
+    ],
+    "filters": {
+      "type": "activity",
+      "category": "food",
+      "target": "foodies"
+    },
+    "tests": "foodies target + food category, no geo filter, street-food semantics"
+  },
+  {
+    "id": "q16",
+    "query": "wandering mysterious underground tunnels alone on a quiet afternoon",
+    "expected_hits": [
+      "activity_naples_005",
+      "activity_paris_009"
+    ],
+    "filters": {
+      "type": "activity",
+      "target": "solo"
+    },
+    "tests": "solo target, cross-city underground/catacombs semantic disambiguation"
+  },
+  {
+    "id": "q17",
+    "query": "affordable seaside city with great food and lively streets",
+    "expected_hits": [
+      "destination_naples"
+    ],
+    "filters": {
+      "type": "destination",
+      "budget_level": "low"
+    },
+    "tests": "destination-choice + low budget_level + sea/food/lively tag semantics"
+  },
+  {
+    "id": "q18",
+    "query": "cheap simple room for a solo traveler on a tight budget",
+    "expected_hits": [
+      "hotel_rome_001",
+      "hotel_rome_002"
+    ],
+    "filters": {
+      "type": "hotel",
+      "city": "Rome",
+      "tier": "budget",
+      "target": "solo"
+    },
+    "tests": "hotel + city + budget tier + solo target + cheap-stay semantics"
+  }
+]
