@@ -11,6 +11,7 @@ so the LLM never relies on its memory for requirements. Guards live in the tools
 from __future__ import annotations
 
 import json
+import re
 import time
 
 from langchain_core.messages import SystemMessage
@@ -45,6 +46,12 @@ def is_transient(e: Exception) -> bool:
     return any(m.lower() in text for m in TRANSIENT_MARKERS)
 
 
+def retry_delay_seconds(e: Exception) -> float | None:
+    """Parse the server's RetryInfo (e.g. 'retryDelay': '55642s' = daily quota reset)."""
+    m = re.search(r"retryDelay['\"]?:\s*['\"]?(\d+)", str(e))
+    return float(m.group(1)) if m else None
+
+
 def invoke_with_retry(model, messages, attempts: int = 4):
     """Explicit backoff for transient free-tier errors (429 quota, 503 demand spikes).
     Same philosophy as the ingestion retry: survive the free tier gracefully."""
@@ -61,32 +68,46 @@ def invoke_with_retry(model, messages, attempts: int = 4):
             raise
 
 
-def invoke_with_fallback(models, messages):
+def invoke_with_fallback(models, messages, cooldown: dict):
     """Try each (name, bound model) in order; persistent transient errors move to the next.
 
     Free-tier reality (D23): flash demand spikes (503) come and go; the lite tier
     usually serves and handles all 7 tools correctly (verified). Fallbacks are logged.
+
+    `cooldown` (per-process, in-memory): models reporting a LONG retryDelay (daily
+    quota exhaustion) are skipped until that delay elapses — no pointless re-probing
+    every turn. Short-lived errors (503 spikes, per-minute 429) never ban a model.
+    Cleared on restart, so a new session probes fresh.
     """
+    now = time.monotonic()
+    last_name = models[-1][0]
+    candidates = [(n, m) for n, m in models if n == last_name or cooldown.get(n, 0.0) <= now]
     last_error = None
-    for i, (name, model) in enumerate(models):
+    for name, model in candidates:
         # fast failover: one attempt per model; full retries only on the last one
-        attempts = 3 if i == len(models) - 1 else 1
+        attempts = 3 if name == last_name else 1
         try:
             response = invoke_with_retry(model, messages, attempts=attempts)
-            if i > 0:
+            if name != models[0][0]:
                 print(f"  [llm] answered by fallback model: {name}")
             return response
         except Exception as e:
             if not is_transient(e):
                 raise
             last_error = e
-            print(f"  [llm] {name} unavailable ({type(e).__name__}); trying next model")
+            delay = retry_delay_seconds(e)
+            if delay and delay > 300:  # daily quota: honor the reported reset time
+                cooldown[name] = time.monotonic() + delay
+                print(f"  [llm] {name} daily quota exhausted; skipping it for ~{delay / 3600:.1f}h (this session)")
+            else:
+                print(f"  [llm] {name} unavailable ({type(e).__name__}); trying next model")
     raise last_error
 
 
 def build_graph(checkpointer, model_name: str | None = None):
     names = [model_name] if model_name else [config.AGENT_MODEL, *config.AGENT_MODEL_FALLBACKS]
     models = [(n, make_model(n).bind_tools(TOOLS)) for n in names]
+    cooldown: dict[str, float] = {}  # per-process memory of daily-exhausted models
 
     def agent(state: AgentState) -> dict:
         slots = state.get("slots", {})
@@ -98,7 +119,7 @@ def build_graph(checkpointer, model_name: str | None = None):
             + "\nMissing required slots: "
             + (", ".join(missing) if missing else "none — requirements complete")
         )
-        response = invoke_with_fallback(models, [SystemMessage(content=system)] + state["messages"])
+        response = invoke_with_fallback(models, [SystemMessage(content=system)] + state["messages"], cooldown)
         return {"messages": [response]}
 
     graph = StateGraph(AgentState)
