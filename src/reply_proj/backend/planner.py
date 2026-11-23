@@ -247,7 +247,8 @@ def _proposal(slots: dict, city: dict, best: dict, travelers: int, nights: int, 
 
 def proposal_summary(p: dict) -> dict:
     """Compact view for the LLM context and tool results (IDs included for revision deltas)."""
-    return {"proposal_id": p["proposal_id"], "city": p["city_name"],
+    return {"proposal_id": p["proposal_id"], "status": p.get("status", "proposed"),
+            "booking_id": p.get("booking_id"), "city": p["city_name"],
             "start": p["start_date"], "end": p["end_date"], "travelers": p["n_travelers"],
             "hotel": p["hotel"],
             "flights": [{"date": i["date"], **i["details"]} for i in p["items"] if i["item_type"] == "flight"],

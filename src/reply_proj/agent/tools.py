@@ -24,7 +24,7 @@ from langgraph.prebuilt import InjectedState
 from langgraph.types import Command
 
 from reply_proj.agent.state import AgentState, missing_slots
-from reply_proj.backend import datastore, planner
+from reply_proj.backend import booking, datastore, planner
 from reply_proj.backend.retriever import Retriever
 
 CATEGORIES = {"culture", "sport", "relax", "nightlife", "food", "nature"}
@@ -288,5 +288,62 @@ def build_itinerary(
                                                     tool_call_id=tool_call_id)]})
 
 
+@tool
+def book_itinerary(
+    state: Annotated[AgentState, InjectedState],
+    tool_call_id: Annotated[str, InjectedToolCallId],
+    confirmed_by_user: bool = False,
+) -> Command:
+    """Book the current proposal. WITHOUT confirmed_by_user=true this ONLY returns a preview
+    of exactly what will be booked: show it to the user and ask for explicit confirmation.
+    Set confirmed_by_user=true ONLY after the user clearly agrees in chat ('yes', 'book it',
+    'confirm'); never on vague enthusiasm or your own initiative.
+    At commit, live prices/availability are re-validated; if anything changed the booking is
+    refused with differences: explain them, rebuild the itinerary, and ask again.
+    Returns status: preview | booked (with booking_id) | already_booked | refused."""
+    proposal = state.get("proposal")
+    if not proposal or proposal.get("status") != "proposed":
+        return Command(update={"messages": [ToolMessage(content=json.dumps(
+            {"status": "refused", "reasons": ["no active proposal — build the itinerary first"]}),
+            tool_call_id=tool_call_id)]})
+    if not confirmed_by_user:
+        result = booking.preview_booking(proposal)
+        return Command(update={"messages": [ToolMessage(content=json.dumps(result, ensure_ascii=False),
+                                                        tool_call_id=tool_call_id)]})
+    result = booking.confirm_booking(proposal, state["user_id"])
+    update = {"messages": [ToolMessage(content=json.dumps(result, ensure_ascii=False),
+                                     tool_call_id=tool_call_id)]}
+    if result["status"] in ("booked", "already_booked"):
+        update["proposal"] = {**proposal, "status": "booked", "booking_id": result.get("booking_id")}
+    return Command(update=update)
+
+
+@tool
+def cancel_booking(
+    state: Annotated[AgentState, InjectedState],
+    tool_call_id: Annotated[str, InjectedToolCallId],
+    booking_id: int,
+) -> Command:
+    """Cancel one of the user's confirmed bookings (whole booking; all inventory restored).
+    Ownership is checked in code. Item-level editing is not supported.
+    Args:
+        booking_id: the booking's id (from list_bookings)."""
+    result = booking.cancel_booking(booking_id, state["user_id"])
+    update = {"messages": [ToolMessage(content=json.dumps(result, ensure_ascii=False),
+                                     tool_call_id=tool_call_id)]}
+    p = state.get("proposal")
+    if result["status"] == "cancelled" and p and p.get("booking_id") == booking_id:
+        update["proposal"] = {**p, "status": "cancelled"}
+    return Command(update=update)
+
+
+@tool
+def list_bookings(state: Annotated[AgentState, InjectedState]) -> str:
+    """List the user's bookings: id, status, city, dates, travelers, total price.
+    Use for 'what have I booked?' and before cancelling."""
+    return json.dumps(booking.list_bookings(state["user_id"]), ensure_ascii=False)
+
+
 TOOLS = [update_requirements, search_activities, search_hotels, search_destinations,
-         search_guides, search_flights, find_hotels, build_itinerary]
+         search_guides, search_flights, find_hotels, build_itinerary,
+         book_itinerary, cancel_booking, list_bookings]
