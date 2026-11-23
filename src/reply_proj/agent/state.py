@@ -18,12 +18,14 @@ from langgraph.graph.message import add_messages
 
 REQUIRED_SLOTS = ("budget", "nation", "preferences", "month")
 DEFAULT_SLOTS = {"nights": 4, "travelers": 1}
+EMPTY_REVISIONS = {"exclude_activity_ids": [], "pins": {}}
 
 
 class AgentState(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]
     slots: dict
     proposal: dict | None
+    revisions: dict  # D24: accumulated exclude_activity_ids + pins (date -> activity_id)
     user_id: int
 
 

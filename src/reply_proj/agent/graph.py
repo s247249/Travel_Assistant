@@ -22,7 +22,7 @@ from langgraph.prebuilt import ToolNode, tools_condition
 from reply_proj.agent.prompts import SYSTEM_PROMPT
 from reply_proj.agent.state import AgentState, missing_slots
 from reply_proj.agent.tools import TOOLS
-from reply_proj.backend import config
+from reply_proj.backend import config, planner
 
 
 def make_model(model_name: str | None = None):
@@ -119,6 +119,13 @@ def build_graph(checkpointer, model_name: str | None = None):
             + "\nMissing required slots: "
             + (", ".join(missing) if missing else "none — requirements complete")
         )
+        proposal = state.get("proposal")
+        if proposal:
+            system += "\n\n## Current proposal (authoritative)\n" + json.dumps(
+                planner.proposal_summary(proposal), ensure_ascii=False)
+        revisions = state.get("revisions") or {}
+        if revisions.get("exclude_activity_ids") or revisions.get("pins"):
+            system += "\n\n## Active revision requests\n" + json.dumps(revisions, ensure_ascii=False)
         response = invoke_with_fallback(models, [SystemMessage(content=system)] + state["messages"], cooldown)
         return {"messages": [response]}
 

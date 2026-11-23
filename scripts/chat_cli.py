@@ -66,6 +66,7 @@ def main() -> None:
                 "messages": [],
                 "slots": {**DEFAULT_SLOTS, "origin": user["home_airport"]},
                 "proposal": None,
+                "revisions": {"exclude_activity_ids": [], "pins": {}},
                 "user_id": user["id"],
             }
         else:

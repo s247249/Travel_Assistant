@@ -15,6 +15,7 @@ decide when/how to call each tool, so they state arguments and vocabularies.
 from __future__ import annotations
 
 import json
+from datetime import date
 from typing import Annotated
 
 from langchain_core.messages import ToolMessage
@@ -23,7 +24,7 @@ from langgraph.prebuilt import InjectedState
 from langgraph.types import Command
 
 from reply_proj.agent.state import AgentState, missing_slots
-from reply_proj.backend import datastore
+from reply_proj.backend import datastore, planner
 from reply_proj.backend.retriever import Retriever
 
 CATEGORIES = {"culture", "sport", "relax", "nightlife", "food", "nature"}
@@ -146,6 +147,8 @@ def update_requirements(
     nights: int | None = None,
     travelers: int | None = None,
     origin: str | None = None,
+    city: str | None = None,
+    targets: list[str] | None = None,
 ) -> Command:
     """Record travel requirements learned from the user. Call AS SOON AS any value is revealed;
     partial updates are fine. Values are validated in code; rejected values come back with
@@ -157,7 +160,9 @@ def update_requirements(
         month: travel month, format YYYY-MM, must be within the available season.
         nights: trip length in nights, integer 1-14.
         travelers: party size, integer 1-8.
-        origin: departure airport IATA code, e.g. TRN/MXP/FCO."""
+        origin: departure airport IATA code, e.g. TRN/MXP/FCO.
+        city: confirmed destination city (id or name, e.g. 'palma'/'Palma de Mallorca'); must belong to the nation.
+        targets: party profile when stated, list from family/young/sporty/couples/solo/seniors/relax-seekers/foodies."""
     accepted: dict = {}
     rejected: dict = {}
 
@@ -200,16 +205,88 @@ def update_requirements(
             accepted["origin"] = str(origin).upper()
         else:
             rejected["origin"] = f"unknown airport; choose from {codes}"
+    if city is not None:
+        c = datastore.resolve_city(str(city))
+        if c is None:
+            rejected["city"] = f"unknown city; choose from {[x['name'] for x in datastore.list_cities()]}"
+        else:
+            nation_now = accepted.get("nation") or state.get("slots", {}).get("nation")
+            if nation_now and c["country"] != nation_now:
+                rejected["city"] = f"{c['name']} is in {c['country']}, but the nation is {nation_now}"
+            else:
+                accepted["city"] = c["id"]
+                accepted.setdefault("nation", c["country"])
+    if targets is not None:
+        if isinstance(targets, list) and all(t in TARGETS for t in targets):
+            accepted["targets"] = list(targets)
+        else:
+            rejected["targets"] = f"list from {sorted(TARGETS)}"
 
     slots = {**state.get("slots", {}), **accepted}
     missing = missing_slots(slots)
     result = {"accepted": accepted, "rejected": rejected, "missing": missing,
               "complete": not missing, "slots": slots}
-    return Command(update={
-        "slots": slots,
-        "messages": [ToolMessage(content=json.dumps(result, ensure_ascii=False), tool_call_id=tool_call_id)],
-    })
+    update = {"slots": slots,
+              "messages": [ToolMessage(content=json.dumps(result, ensure_ascii=False), tool_call_id=tool_call_id)]}
+    if "city" in accepted and accepted["city"] != state.get("slots", {}).get("city"):
+        update["revisions"] = {"exclude_activity_ids": [], "pins": {}}  # new city -> fresh revisions (D24)
+    return Command(update=update)
+
+
+@tool
+def build_itinerary(
+    state: Annotated[AgentState, InjectedState],
+    tool_call_id: Annotated[str, InjectedToolCallId],
+    start_date: str | None = None,
+    exclude_activity_ids: list[str] | None = None,
+    pins: list[str] | None = None,
+    reset_revisions: bool = False,
+) -> Command:
+    """Build or rebuild the complete itinerary (flights + hotel every night + one activity per day)
+    from the collected requirements, within budget. Deterministic code assembles and validates;
+    call when requirements AND city are complete, and after any change the user requests.
+    Args:
+        start_date: optional ISO YYYY-MM-DD override within the chosen month (default: cheapest window).
+        exclude_activity_ids: activity IDs to avoid this trip (accumulate across calls; use for
+            'not that one' objections instead of rewriting global preferences).
+        pins: force an activity on a day, format 'YYYY-MM-DD:activity_id'.
+        reset_revisions: clear accumulated exclusions/pins before building.
+    Returns a proposal summary (proposal_id, days, total, margin) or a diagnosis
+    (incomplete / infeasible with reasons and suggestions) to discuss with the user."""
+    old = state.get("revisions") or {}
+    revisions = ({"exclude_activity_ids": [], "pins": {}} if reset_revisions else
+                 {"exclude_activity_ids": list(old.get("exclude_activity_ids", [])),
+                  "pins": dict(old.get("pins", {}))})
+    errors = []
+    for aid in exclude_activity_ids or []:
+        if not datastore.activity_exists(aid):
+            errors.append(f"unknown activity id {aid!r}")
+        elif aid not in revisions["exclude_activity_ids"]:
+            revisions["exclude_activity_ids"].append(aid)
+    for pin in pins or []:
+        try:
+            d, aid = pin.split(":", 1)
+            date.fromisoformat(d)
+        except ValueError:
+            errors.append(f"pin {pin!r} must be 'YYYY-MM-DD:activity_id'")
+            continue
+        if not datastore.activity_exists(aid):
+            errors.append(f"unknown activity id {aid!r} in pin")
+            continue
+        revisions["pins"][d] = aid
+    if errors:
+        return Command(update={"messages": [ToolMessage(
+            content=json.dumps({"status": "rejected", "errors": errors}), tool_call_id=tool_call_id)]})
+
+    result = planner.build_itinerary(state.get("slots", {}), revisions, start_date)
+    if result["status"] == "proposed":
+        return Command(update={"proposal": result, "revisions": revisions,
+                               "messages": [ToolMessage(content=json.dumps(planner.proposal_summary(result), ensure_ascii=False),
+                                                        tool_call_id=tool_call_id)]})
+    return Command(update={"revisions": revisions,
+                           "messages": [ToolMessage(content=json.dumps(result, ensure_ascii=False),
+                                                    tool_call_id=tool_call_id)]})
 
 
 TOOLS = [update_requirements, search_activities, search_hotels, search_destinations,
-         search_guides, search_flights, find_hotels]
+         search_guides, search_flights, find_hotels, build_itinerary]

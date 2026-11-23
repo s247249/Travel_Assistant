@@ -57,15 +57,63 @@ def search_flights(origin: str, destination_city: str, date_from: str, date_to: 
         raise ValueError(f"unknown destination city {destination_city!r}")
     if origin not in valid_airports():
         raise ValueError(f"unknown origin airport {origin!r}")
-    date.fromisoformat(date_from)  # validate format
+    date.fromisoformat(date_from)
     date.fromisoformat(date_to)
+    return flights_between(origin, city["airport_code"], date_from, date_to, limit)
+
+
+def flights_between(from_code: str, to_code: str, date_from: str, date_to: str, limit: int = 500) -> list[dict]:
+    """Raw route query (both directions usable; planner pairs outbound/return)."""
     with connect() as con:
         rows = con.execute(
-            """SELECT f.date, f.depart_time, f.from_code, f.to_code, f.price, f.seats_left
-               FROM flights f
-               WHERE f.from_code = ? AND f.to_code = ? AND f.date BETWEEN ? AND ?
-               ORDER BY f.date, f.price LIMIT ?""",
-            (origin, city["airport_code"], date_from, date_to, limit),
+            """SELECT id, date, depart_time, from_code, to_code, price, seats_left
+               FROM flights WHERE from_code = ? AND to_code = ? AND date BETWEEN ? AND ?
+               ORDER BY date, price LIMIT ?""",
+            (from_code, to_code, date_from, date_to, limit),
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def hotel_nights(hotel_id: str, date_from: str, date_to: str) -> list[dict]:
+    """Per-night rows (checkout exclusive) for proposal items."""
+    with connect() as con:
+        rows = con.execute(
+            "SELECT date, rooms_left, price_night FROM hotel_availability "
+            "WHERE hotel_id = ? AND date >= ? AND date < ? ORDER BY date",
+            (hotel_id, date_from, date_to),
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def list_cities() -> list[dict]:
+    with connect() as con:
+        return [dict(r) for r in con.execute("SELECT id, name, country FROM cities ORDER BY name")]
+
+
+def activities_for_city(city_id: str) -> list[dict]:
+    with connect() as con:
+        rows = con.execute(
+            "SELECT id, name, category, duration_min, base_price FROM activities WHERE city_id = ? ORDER BY id",
+            (city_id,),
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+def activity_exists(activity_id: str) -> bool:
+    with connect() as con:
+        return con.execute("SELECT 1 FROM activities WHERE id = ?", (activity_id,)).fetchone() is not None
+
+
+def available_activities(city_id: str, dates: list[str], travelers: int) -> list[dict]:
+    """Activities with spots >= travelers on the given dates (feasibility pre-filter)."""
+    placeholders = ",".join("?" * len(dates))
+    with connect() as con:
+        rows = con.execute(
+            f"""SELECT a.id, a.name, a.category, a.base_price, av.date, av.spots_left
+                FROM activities a JOIN activity_availability av ON av.activity_id = a.id
+                WHERE a.city_id = ? AND av.date IN ({placeholders}) AND av.spots_left >= ?
+                ORDER BY av.date, a.id""",
+            (city_id, *dates, travelers),
         ).fetchall()
     return [dict(r) for r in rows]
 
