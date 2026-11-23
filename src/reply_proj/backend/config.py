@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 
 DB_PATH = ROOT / "db" / "travel.db"
+CHECKPOINTS_DB = ROOT / "db" / "checkpoints.db"
 CHROMA_DIR = ROOT / "db" / "chroma"
 CORPUS_DIR = ROOT / "data" / "corpus"
 INVENTORY_PATH = ROOT / "data" / "inventory.json"
@@ -15,6 +16,8 @@ INVENTORY_PATH = ROOT / "data" / "inventory.json"
 EMBED_MODEL = "gemini-embedding-001"
 EMBED_DIMS = 3072
 COLLECTION = "travel_corpus"
+AGENT_MODEL = "gemini-3.6-flash"  # D23: pinned; availability probed (3.7/3.8 demand-limited, 2.5 closed to new keys)
+AGENT_MODEL_FALLBACKS = ["gemini-3.5-flash", "gemini-3.5-flash-lite"]  # D23: auto-fallback on persistent 429/503
 
 
 def load_env() -> None:

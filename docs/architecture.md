@@ -58,7 +58,7 @@ User ⇄ Chat UI ⇄ FastAPI ⇄ LangGraph agent (Gemini)
 | D20 | State & slot filling | `AgentState`: messages (add_messages reducer), slots dict, proposal, user_id **injected from auth session, never from chat**. Slots: budget>0, nation∈4 countries, preferences⊆6 categories, month∈season, nights 1–14 (default 4), travelers 1–8 (default 1), origin∈airports (default profile). Filling via `update_requirements` tool: LLM extracts, **code validates**, returns accepted/rejected/missing/complete | Separate per-turn extraction node; flat state fields | Auditable tool-call trail; deterministic validation; one LLM view | **Decided** (Phase 3 B) |
 | D21 | Tool surface | 9 tools: update_requirements; 4 semantic search (D17); search_flights + find_hotels (SQL facts); build_itinerary (Phase 4); book_itinerary (Phase 5). Phase 3 ships first 7 + CLI chat (`scripts/chat_cli.py`) | more/fewer tools | Semantic = "what suits us", SQL = "cost/availability"; planner/booking never trust LLM arithmetic | **Decided** (Phase 3 C) |
 | D22 | Checkpointer | `langgraph-checkpoint-sqlite`, **sync SqliteSaver**, separate `db/checkpoints.db`; thread_id = conversations.id (UUID); reopen chat = load state | AsyncSqliteSaver (+aiosqlite) | Minimal deps; FastAPI can call via threadpool; business DB stays clean | **Decided** (Phase 3 D) |
-| D23 | Agent model | `gemini-2.5-flash`, temperature ~0.3; system prompt drafted by manager, reviewed by user, committed artifact | flash-lite (weaker tools), pro (tight limits) | Free tier + reliable multi-tool calling | **Decided** (Phase 3 E) |
+| D23 | Agent model | **Fallback chain** (user-approved): `gemini-3.6-flash` → `gemini-3.5-flash` → `gemini-3.5-flash-lite`, automatic on persistent 429/503, logged; `--model` overrides with a single pin. Lite tier verified: extracts all 7 slots in one call, correct nation→city recommendation. Fixed sampling on 3.6 (temperature not configurable). History: 2.5-flash closed to new keys (404) → 3.7/3.8 demand-limited (503) → pinned 3.6 → flash-family spikes hit the user → chain approved. `-latest` aliases avoided (reproducibility). System prompt: committed artifact | single pin + manual --model; flash-lite only; pro | Free tier is capacity-roulette; chain makes the demo robust at any hour, honestly logged | **Decided** (Phase 3 E, amended thrice) |
 
 ### Open decisions (later rounds)
 - Itinerary construction algorithm (Phase 4)
@@ -71,7 +71,7 @@ User ⇄ Chat UI ⇄ FastAPI ⇄ LangGraph agent (Gemini)
 
 1. **Data layer** ✅ — SQL schema, synthetic inventory generation, Markdown corpus, ingestion into Chroma
 2. **Retrieval** ✅ — fit-or-split chunking, Gemini embeddings, metadata filters; eval: 18/18 hit@5 (D18)
-3. **Conversation agent** — LangGraph state (budget, nation, activities, month), slot filling, tool calling
+3. **Conversation agent** ✅ — LangGraph single-agent loop, slot filling via validated tool, 7 tools, SQLite checkpointer; verified: extraction, grounded recommendations, cross-process resume (planner/booking arrive in Phases 4–5)
 4. **Itinerary generation** — deterministic builder: budget / availability / preference constraints
 5. **Booking** — chat confirmation flow, persisted booking status
 6. **API + auth** — REST endpoints, registration/login
@@ -161,3 +161,20 @@ data/eval/queries_raw.json → validate_eval.py → queries.json → eval_retrie
   2. Retrieval eval set (P5/D18) — **DONE**: 18 queries validated, scored 100% hit@5/hit@1,
      MRR 1.000 (`data/eval/results.json`); caveats recorded in D18.
   3. Candidate (decide when reached): frontend copy/static mockups (Phase 7).
+
+## 9. Agent module map (Phase 3, D19–D23)
+
+| Module | Role |
+|---|---|
+| `agent/state.py` | `AgentState` (messages + slots + proposal + user_id); required-slot logic |
+| `agent/prompts.py` | System prompt (committed artifact); dynamic slots block appended per turn by the agent node |
+| `agent/tools.py` | 7 tools: `update_requirements` (InjectedState + Command pattern, code validation), 4 semantic wrappers over `Retriever`, 2 SQL fact tools |
+| `agent/graph.py` | Hand-built StateGraph: agent ⇄ tools loop, `tools_condition` router, `invoke_with_retry` + `invoke_with_fallback` (model chain, D23) |
+| `backend/datastore.py` | SQL facts: flight search, hotel availability + room/price math, validation lookups (data-driven season) |
+| `backend/user_db.py` | Demo-user helper (real auth in Phase 6) |
+| `backend/config.py` | + `CHECKPOINTS_DB`, `AGENT_MODEL` (single point of change) |
+| `scripts/chat_cli.py` | Terminal harness: streams tool calls visibly, `--thread` resume, `--verbose` |
+
+Verified behaviors: single-call extraction of 6 requirements; natural follow-up for missing slot;
+parallel tool calls (semantic + SQL); grounded recommendations (no invented prices);
+cross-process thread resume with full state recall (D13/D22).
