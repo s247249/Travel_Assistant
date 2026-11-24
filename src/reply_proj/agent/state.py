@@ -16,8 +16,8 @@ from typing import Annotated, TypedDict
 from langchain_core.messages import AnyMessage
 from langgraph.graph.message import add_messages
 
-REQUIRED_SLOTS = ("budget", "nation", "preferences", "month")
-DEFAULT_SLOTS = {"nights": 4, "travelers": 1}
+REQUIRED_SLOTS = ("budget", "nation", "preferences", "month", "nights", "travelers")
+DEFAULT_SLOTS = {}
 EMPTY_REVISIONS = {"exclude_activity_ids": [], "pins": {}}
 
 

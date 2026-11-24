@@ -219,7 +219,7 @@ function proposalCard(p) {
 }
 
 function slotsPanel() {
-  const required = ["budget", "nation", "preferences", "month", "city"];
+  const required = ["budget", "nation", "preferences", "month", "nights", "travelers", "city"];
   const keys = ["budget", "nation", "city", "preferences", "month", "nights", "travelers", "origin", "targets"];
   const rows = keys.map((k) => {
     const v = state.slots[k];

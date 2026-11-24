@@ -112,7 +112,7 @@ def _fill_days(city_id: str, trip_dates: list[date], travelers: int, prefs: set,
 def build_itinerary(slots: dict, revisions: dict | None = None, start_date: str | None = None) -> dict:
     """Main entry: proposal dict (status=proposed), or incomplete/infeasible/rejected diagnosis."""
     revisions = revisions or {"exclude_activity_ids": [], "pins": {}}
-    missing = [k for k in ("budget", "nation", "preferences", "month") if not slots.get(k)]
+    missing = [k for k in ("budget", "nation", "preferences", "month", "nights", "travelers") if not slots.get(k)]
     if not slots.get("city"):
         missing.append("city")
     if missing:
@@ -121,8 +121,8 @@ def build_itinerary(slots: dict, revisions: dict | None = None, start_date: str 
     if city is None:
         return {"status": "incomplete", "missing": ["city"], "reason": f"unknown city {slots['city']!r}"}
 
-    travelers = int(slots.get("travelers", 1))
-    nights = int(slots.get("nights", 4))
+    travelers = int(slots["travelers"])
+    nights = int(slots["nights"])
     budget = float(slots["budget"])
     prefs = set(slots["preferences"])
     party_targets = set(slots.get("targets") or [])
