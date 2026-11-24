@@ -18,3 +18,9 @@ wheels/
 *.sqlite3
 *.db
 db/
+
+# Development tools & intermediate artifacts (not needed to run the app)
+scripts/dev/
+data/corpus_raw/
+data/prompts/
+data/eval/

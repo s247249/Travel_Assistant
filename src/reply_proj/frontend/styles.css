@@ -1,0 +1,55 @@
+/* Minimal custom CSS (D27): only what Bootstrap doesn't provide. */
+
+#messages {
+  height: 62vh;
+  overflow-y: auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: .375rem;
+}
+
+.msg {
+  max-width: 80%;
+  padding: .5rem .75rem;
+  border-radius: .75rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.msg-human {
+  background: #0d6efd;
+  color: #fff;
+  border-bottom-right-radius: .15rem;
+}
+
+.msg-ai {
+  background: #e9ecef;
+  color: #212529;
+  border-bottom-left-radius: .15rem;
+}
+
+.conv-item {
+  cursor: pointer;
+}
+
+.conv-item.active {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.slot-missing {
+  color: #dc3545;
+  font-style: italic;
+}
+
+.loading-dots::after {
+  content: "…";
+  animation: dots 1.2s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0% { content: ""; }
+  25% { content: "."; }
+  50% { content: ".."; }
+  75% { content: "..."; }
+}

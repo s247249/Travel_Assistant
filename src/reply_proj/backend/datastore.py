@@ -7,6 +7,7 @@ Phase 5; user auth in Phase 6.
 
 from __future__ import annotations
 
+import json
 import math
 import sqlite3
 from datetime import date
@@ -93,10 +94,17 @@ def list_cities() -> list[dict]:
 def activities_for_city(city_id: str) -> list[dict]:
     with connect() as con:
         rows = con.execute(
-            "SELECT id, name, category, duration_min, base_price FROM activities WHERE city_id = ? ORDER BY id",
+            "SELECT id, name, category, duration_min, base_price, targets FROM activities WHERE city_id = ? ORDER BY id",
             (city_id,),
         ).fetchall()
     return [dict(r) for r in rows]
+
+
+def activity_targets(city_id: str) -> dict[str, set[str]]:
+    """Ideal-audience targets per activity, from SQL (authority: generator, D24/F4 amended)."""
+    with connect() as con:
+        rows = con.execute("SELECT id, targets FROM activities WHERE city_id = ?", (city_id,)).fetchall()
+    return {r["id"]: set(json.loads(r["targets"])) for r in rows}
 
 
 def activity_exists(activity_id: str) -> bool:

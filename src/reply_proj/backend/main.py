@@ -13,6 +13,7 @@ from __future__ import annotations
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from langgraph.checkpoint.sqlite import SqliteSaver
 from starlette.middleware.sessions import SessionMiddleware
 
@@ -45,6 +46,10 @@ def create_app() -> FastAPI:
     @app.get("/api/health")
     def health():
         return {"status": "ok"}
+
+    # Frontend (D27): same-origin static serving -> session cookies work, no CORS.
+    # Mounted LAST so /api/* routes take precedence.
+    app.mount("/", StaticFiles(directory=str(config.STATIC_DIR), html=True), name="static")
 
     return app
 

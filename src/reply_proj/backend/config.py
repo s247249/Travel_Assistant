@@ -12,6 +12,7 @@ CHECKPOINTS_DB = ROOT / "db" / "checkpoints.db"
 CHROMA_DIR = ROOT / "db" / "chroma"
 CORPUS_DIR = ROOT / "data" / "corpus"
 INVENTORY_PATH = ROOT / "data" / "inventory.json"
+STATIC_DIR = Path(__file__).resolve().parent.parent / "frontend"  # src/reply_proj/frontend (sibling of backend, D27)
 
 EMBED_MODEL = "gemini-embedding-001"
 EMBED_DIMS = 3072

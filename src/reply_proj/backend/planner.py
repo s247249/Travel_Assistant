@@ -1,8 +1,8 @@
 """Deterministic itinerary builder (Phase 4, D24 — architecture A).
 
-Pure code: no LLM, no embedding calls, no API key needed.
-Reads SQL facts (datastore) + Chroma metadata BY ID (target flags, F4a —
-one store, two access paths: semantic for the LLM, exact for the planner).
+Pure code: no LLM, no embedding calls, no API key needed, no Chroma dependency.
+Reads everything from SQL (datastore), including activity targets (authority =
+generator, D28). Chroma is used only by the agent's semantic search, not here.
 
 Algorithm (F2b): enumerate top-5 cheapest flight windows x top-3 hotels;
 fill each calendar day with the best feasible activity (lexicographic:
@@ -17,9 +17,7 @@ import calendar
 import uuid
 from datetime import date, timedelta
 
-import chromadb
-
-from reply_proj.backend import config, datastore
+from reply_proj.backend import datastore
 
 MAX_WINDOWS = 5
 MAX_HOTELS = 3
@@ -28,18 +26,6 @@ MAX_HOTELS = 3
 def _month_dates(month: str) -> list[date]:
     y, m = map(int, month.split("-"))
     return [date(y, m, d) for d in range(1, calendar.monthrange(y, m)[1] + 1)]
-
-
-def _city_targets(city_id: str) -> dict[str, set[str]]:
-    """F4a: target flags from Chroma metadata — local disk read, no embeddings."""
-    client = chromadb.PersistentClient(path=str(config.CHROMA_DIR))
-    col = client.get_collection(config.COLLECTION)
-    res = col.get(where={"$and": [{"city_id": city_id}, {"type": "activity"}]}, include=["metadatas"])
-    targets: dict[str, set[str]] = {}
-    for meta in res["metadatas"]:
-        targets[meta["doc_id"]] = {k[len("target_"):] for k, v in meta.items()
-                                   if k.startswith("target_") and v}
-    return targets
 
 
 def _flight_windows(origin: str, dest_airport: str, month: str, nights: int,
@@ -162,7 +148,7 @@ def build_itinerary(slots: dict, revisions: dict | None = None, start_date: str 
                 "suggestions": ["try another month", "fewer travelers", "another origin airport",
                                 "move or remove the pinned day"]}
 
-    targets_map = _city_targets(city["id"])
+    targets_map = datastore.activity_targets(city["id"])
     combos = []
     for w in windows:
         for h in datastore.find_hotels(city["name"], w["start"], w["end"], travelers)[:MAX_HOTELS]:

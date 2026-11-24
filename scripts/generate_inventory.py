@@ -131,6 +131,78 @@ ACTIVITIES: dict[str, list[tuple]] = {
     ],
 }
 
+# Ideal-audience targets per activity (authority: generator; harvested from the
+# validated corpus judgments, D24/F4 amended). Corpus copies are validated against
+# these; Chroma metadata is a regenerated projection. JSON list in SQL.
+ACTIVITY_TARGETS = {
+    'activity_barcelona_001': ['couples', 'family', 'seniors'],
+    'activity_barcelona_002': ['family', 'couples', 'young'],
+    'activity_barcelona_003': ['foodies', 'couples', 'young'],
+    'activity_barcelona_004': ['sporty', 'young'],
+    'activity_barcelona_005': ['couples', 'young', 'solo'],
+    'activity_barcelona_006': ['family', 'couples', 'seniors'],
+    'activity_barcelona_007': ['solo', 'couples', 'seniors'],
+    'activity_barcelona_008': ['young', 'couples'],
+    'activity_barcelona_009': ['sporty', 'couples', 'seniors'],
+    'activity_barcelona_010': ['foodies', 'couples', 'young'],
+    'activity_barcelona_011': ['family', 'couples', 'relax-seekers'],
+    'activity_innsbruck_001': ['sporty', 'couples', 'young'],
+    'activity_innsbruck_002': ['sporty', 'young', 'solo'],
+    'activity_innsbruck_003': ['couples', 'seniors', 'solo', 'family'],
+    'activity_innsbruck_004': ['couples', 'seniors', 'family'],
+    'activity_innsbruck_005': ['sporty', 'young'],
+    'activity_innsbruck_006': ['sporty', 'family', 'young'],
+    'activity_innsbruck_007': ['couples', 'family', 'seniors', 'foodies'],
+    'activity_innsbruck_008': ['family', 'seniors', 'couples'],
+    'activity_innsbruck_009': ['couples', 'family', 'young'],
+    'activity_innsbruck_010': ['couples', 'family', 'relax-seekers', 'solo'],
+    'activity_innsbruck_011': ['sporty', 'young', 'couples'],
+    'activity_naples_001': ['family', 'couples', 'seniors'],
+    'activity_naples_002': ['young', 'solo', 'couples', 'foodies'],
+    'activity_naples_003': ['family', 'young', 'couples', 'foodies'],
+    'activity_naples_004': ['couples', 'young', 'relax-seekers'],
+    'activity_naples_005': ['young', 'solo', 'family'],
+    'activity_naples_006': ['couples', 'seniors', 'relax-seekers', 'family'],
+    'activity_naples_007': ['family', 'couples', 'seniors'],
+    'activity_naples_008': ['sporty', 'young', 'solo'],
+    'activity_naples_009': ['couples', 'young', 'relax-seekers'],
+    'activity_naples_010': ['young', 'solo', 'couples'],
+    'activity_naples_011': ['relax-seekers', 'couples', 'young', 'family'],
+    'activity_palma_001': ['family', 'couples', 'seniors'],
+    'activity_palma_002': ['family', 'young', 'couples', 'relax-seekers'],
+    'activity_palma_003': ['sporty', 'young', 'solo'],
+    'activity_palma_004': ['young', 'couples', 'relax-seekers'],
+    'activity_palma_005': ['couples', 'seniors', 'solo'],
+    'activity_palma_006': ['family', 'couples', 'sporty'],
+    'activity_palma_007': ['couples', 'young', 'relax-seekers'],
+    'activity_palma_008': ['sporty', 'young', 'solo'],
+    'activity_palma_009': ['foodies', 'couples', 'young'],
+    'activity_palma_010': ['solo', 'couples', 'seniors'],
+    'activity_palma_011': ['family', 'couples', 'sporty', 'young'],
+    'activity_paris_001': ['couples', 'solo', 'seniors'],
+    'activity_paris_002': ['couples', 'family', 'young'],
+    'activity_paris_003': ['couples', 'foodies', 'seniors'],
+    'activity_paris_004': ['couples', 'young', 'solo'],
+    'activity_paris_005': ['couples', 'seniors', 'family'],
+    'activity_paris_006': ['family', 'seniors', 'relax-seekers', 'couples'],
+    'activity_paris_007': ['foodies', 'couples', 'young'],
+    'activity_paris_008': ['couples', 'young'],
+    'activity_paris_009': ['young', 'solo'],
+    'activity_paris_010': ['young', 'family', 'couples', 'relax-seekers'],
+    'activity_paris_011': ['sporty', 'family', 'young'],
+    'activity_rome_001': ['family', 'couples', 'seniors', 'solo'],
+    'activity_rome_002': ['couples', 'seniors', 'solo', 'young'],
+    'activity_rome_003': ['foodies', 'couples', 'young', 'solo'],
+    'activity_rome_004': ['couples', 'seniors', 'solo'],
+    'activity_rome_005': ['couples', 'young', 'solo'],
+    'activity_rome_006': ['sporty', 'young', 'couples'],
+    'activity_rome_007': ['family', 'couples', 'seniors', 'relax-seekers'],
+    'activity_rome_008': ['family', 'young', 'couples', 'foodies'],
+    'activity_rome_009': ['seniors', 'solo', 'couples', 'family'],
+    'activity_rome_010': ['couples', 'young', 'solo', 'seniors'],
+    'activity_rome_011': ['foodies', 'young', 'solo', 'family'],
+}
+
 # (name, tier, max_guests_per_room, amenities) — hotel names are fictional
 HOTELS: dict[str, list[tuple]] = {
     "rome": [
@@ -262,10 +334,11 @@ def main() -> None:
             base = 0.0 if hi == 0 else round(rng.uniform(lo, hi) * index, 2)
             if hi > 0:
                 assert lo * index - 0.01 <= base <= hi * index + 0.01
-            act_rows.append((aid, cid, aname, category, duration, base))
+            targets = ACTIVITY_TARGETS[aid]
+            act_rows.append((aid, cid, aname, category, duration, base, json.dumps(targets)))
             act_json.append({
                 "id": aid, "city_id": cid, "name": aname, "category": category,
-                "duration_min": duration, "base_price": base,
+                "duration_min": duration, "base_price": base, "targets": targets,
                 "operating_days": "daily" if pattern is None else [WEEKDAYS[w] for w in pattern],
             })
             for d in dates:
@@ -279,7 +352,7 @@ def main() -> None:
                 else:
                     spots = rng.randint(4, 30)
                 act_avail.append((aid, d.isoformat(), spots))
-    con.executemany("INSERT INTO activities VALUES (?,?,?,?,?,?)", act_rows)
+    con.executemany("INSERT INTO activities VALUES (?,?,?,?,?,?,?)", act_rows)
     con.executemany("INSERT INTO activity_availability VALUES (?,?,?)", act_avail)
 
     # ---- flights: directed edges, both directions, sparse INN (D8) ----

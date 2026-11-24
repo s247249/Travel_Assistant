@@ -54,7 +54,8 @@ CREATE TABLE IF NOT EXISTS activities (
     name         TEXT NOT NULL,
     category     TEXT NOT NULL CHECK (category IN ('culture','sport','relax','nightlife','food','nature')),
     duration_min INTEGER NOT NULL CHECK (duration_min > 0),
-    base_price   REAL NOT NULL CHECK (base_price >= 0)  -- per person; 0 = free
+    base_price   REAL NOT NULL CHECK (base_price >= 0),  -- per person; 0 = free
+    targets      TEXT NOT NULL DEFAULT '[]'  -- JSON list; authority = generator (D24/F4 amended)
 );
 
 CREATE TABLE IF NOT EXISTS activity_availability (

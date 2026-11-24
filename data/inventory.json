@@ -640,6 +640,12 @@
       "category": "culture",
       "duration_min": 180,
       "base_price": 61.06,
+      "targets": [
+        "family",
+        "couples",
+        "seniors",
+        "solo"
+      ],
       "operating_days": "daily"
     },
     {
@@ -649,6 +655,12 @@
       "category": "culture",
       "duration_min": 210,
       "base_price": 25.08,
+      "targets": [
+        "couples",
+        "seniors",
+        "solo",
+        "young"
+      ],
       "operating_days": "daily"
     },
     {
@@ -658,6 +670,12 @@
       "category": "food",
       "duration_min": 180,
       "base_price": 74.32,
+      "targets": [
+        "foodies",
+        "couples",
+        "young",
+        "solo"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -671,6 +689,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 19.47,
+      "targets": [
+        "couples",
+        "seniors",
+        "solo"
+      ],
       "operating_days": "daily"
     },
     {
@@ -680,6 +703,11 @@
       "category": "nightlife",
       "duration_min": 150,
       "base_price": 77.79,
+      "targets": [
+        "couples",
+        "young",
+        "solo"
+      ],
       "operating_days": [
         "wed",
         "fri",
@@ -693,6 +721,11 @@
       "category": "sport",
       "duration_min": 240,
       "base_price": 50.83,
+      "targets": [
+        "sporty",
+        "young",
+        "couples"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -706,6 +739,12 @@
       "category": "relax",
       "duration_min": 120,
       "base_price": 9.87,
+      "targets": [
+        "family",
+        "couples",
+        "seniors",
+        "relax-seekers"
+      ],
       "operating_days": "daily"
     },
     {
@@ -715,6 +754,12 @@
       "category": "food",
       "duration_min": 180,
       "base_price": 53.32,
+      "targets": [
+        "family",
+        "young",
+        "couples",
+        "foodies"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -728,6 +773,12 @@
       "category": "culture",
       "duration_min": 90,
       "base_price": 16.0,
+      "targets": [
+        "seniors",
+        "solo",
+        "couples",
+        "family"
+      ],
       "operating_days": "daily"
     },
     {
@@ -737,6 +788,12 @@
       "category": "nature",
       "duration_min": 90,
       "base_price": 0.0,
+      "targets": [
+        "couples",
+        "young",
+        "solo",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -746,6 +803,12 @@
       "category": "food",
       "duration_min": 120,
       "base_price": 48.32,
+      "targets": [
+        "foodies",
+        "young",
+        "solo",
+        "family"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -759,6 +822,11 @@
       "category": "culture",
       "duration_min": 300,
       "base_price": 39.03,
+      "targets": [
+        "family",
+        "couples",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -768,6 +836,12 @@
       "category": "culture",
       "duration_min": 150,
       "base_price": 16.03,
+      "targets": [
+        "young",
+        "solo",
+        "couples",
+        "foodies"
+      ],
       "operating_days": "daily"
     },
     {
@@ -777,6 +851,12 @@
       "category": "food",
       "duration_min": 150,
       "base_price": 30.6,
+      "targets": [
+        "family",
+        "young",
+        "couples",
+        "foodies"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -790,6 +870,11 @@
       "category": "nature",
       "duration_min": 480,
       "base_price": 71.51,
+      "targets": [
+        "couples",
+        "young",
+        "relax-seekers"
+      ],
       "operating_days": "daily"
     },
     {
@@ -799,6 +884,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 9.71,
+      "targets": [
+        "young",
+        "solo",
+        "family"
+      ],
       "operating_days": "daily"
     },
     {
@@ -808,6 +898,12 @@
       "category": "relax",
       "duration_min": 90,
       "base_price": 0.0,
+      "targets": [
+        "couples",
+        "seniors",
+        "relax-seekers",
+        "family"
+      ],
       "operating_days": "daily"
     },
     {
@@ -817,6 +913,11 @@
       "category": "culture",
       "duration_min": 90,
       "base_price": 4.64,
+      "targets": [
+        "family",
+        "couples",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -826,6 +927,11 @@
       "category": "sport",
       "duration_min": 240,
       "base_price": 35.46,
+      "targets": [
+        "sporty",
+        "young",
+        "solo"
+      ],
       "operating_days": "daily"
     },
     {
@@ -835,6 +941,11 @@
       "category": "nature",
       "duration_min": 480,
       "base_price": 64.27,
+      "targets": [
+        "couples",
+        "young",
+        "relax-seekers"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -849,6 +960,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 23.82,
+      "targets": [
+        "young",
+        "solo",
+        "couples"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -862,6 +978,12 @@
       "category": "relax",
       "duration_min": 300,
       "base_price": 33.91,
+      "targets": [
+        "relax-seekers",
+        "couples",
+        "young",
+        "family"
+      ],
       "operating_days": "daily"
     },
     {
@@ -871,6 +993,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 34.86,
+      "targets": [
+        "couples",
+        "family",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -880,6 +1007,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 16.84,
+      "targets": [
+        "family",
+        "couples",
+        "young"
+      ],
       "operating_days": "daily"
     },
     {
@@ -889,6 +1021,11 @@
       "category": "food",
       "duration_min": 180,
       "base_price": 45.39,
+      "targets": [
+        "foodies",
+        "couples",
+        "young"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -902,6 +1039,10 @@
       "category": "sport",
       "duration_min": 150,
       "base_price": 51.45,
+      "targets": [
+        "sporty",
+        "young"
+      ],
       "operating_days": "daily"
     },
     {
@@ -911,6 +1052,11 @@
       "category": "nightlife",
       "duration_min": 90,
       "base_price": 38.93,
+      "targets": [
+        "couples",
+        "young",
+        "solo"
+      ],
       "operating_days": [
         "wed",
         "fri",
@@ -925,6 +1071,11 @@
       "category": "nature",
       "duration_min": 150,
       "base_price": 18.7,
+      "targets": [
+        "family",
+        "couples",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -934,6 +1085,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 17.71,
+      "targets": [
+        "solo",
+        "couples",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -943,6 +1099,10 @@
       "category": "nightlife",
       "duration_min": 180,
       "base_price": 41.72,
+      "targets": [
+        "young",
+        "couples"
+      ],
       "operating_days": [
         "fri",
         "sat"
@@ -955,6 +1115,11 @@
       "category": "nature",
       "duration_min": 300,
       "base_price": 66.37,
+      "targets": [
+        "sporty",
+        "couples",
+        "seniors"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -969,6 +1134,11 @@
       "category": "nightlife",
       "duration_min": 120,
       "base_price": 30.66,
+      "targets": [
+        "foodies",
+        "couples",
+        "young"
+      ],
       "operating_days": [
         "thu",
         "fri",
@@ -982,6 +1152,11 @@
       "category": "relax",
       "duration_min": 120,
       "base_price": 4.01,
+      "targets": [
+        "family",
+        "couples",
+        "relax-seekers"
+      ],
       "operating_days": "daily"
     },
     {
@@ -991,6 +1166,11 @@
       "category": "culture",
       "duration_min": 90,
       "base_price": 11.58,
+      "targets": [
+        "family",
+        "couples",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1000,6 +1180,12 @@
       "category": "relax",
       "duration_min": 300,
       "base_price": 85.17,
+      "targets": [
+        "family",
+        "young",
+        "couples",
+        "relax-seekers"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1009,6 +1195,11 @@
       "category": "sport",
       "duration_min": 300,
       "base_price": 58.95,
+      "targets": [
+        "sporty",
+        "young",
+        "solo"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -1022,6 +1213,11 @@
       "category": "relax",
       "duration_min": 300,
       "base_price": 48.86,
+      "targets": [
+        "young",
+        "couples",
+        "relax-seekers"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1031,6 +1227,11 @@
       "category": "culture",
       "duration_min": 150,
       "base_price": 32.86,
+      "targets": [
+        "couples",
+        "seniors",
+        "solo"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -1044,6 +1245,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 9.32,
+      "targets": [
+        "family",
+        "couples",
+        "sporty"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1053,6 +1259,11 @@
       "category": "relax",
       "duration_min": 180,
       "base_price": 72.82,
+      "targets": [
+        "couples",
+        "young",
+        "relax-seekers"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1062,6 +1273,11 @@
       "category": "sport",
       "duration_min": 240,
       "base_price": 48.05,
+      "targets": [
+        "sporty",
+        "young",
+        "solo"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -1075,6 +1291,11 @@
       "category": "food",
       "duration_min": 150,
       "base_price": 46.51,
+      "targets": [
+        "foodies",
+        "couples",
+        "young"
+      ],
       "operating_days": [
         "wed",
         "fri",
@@ -1088,6 +1309,11 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 10.19,
+      "targets": [
+        "solo",
+        "couples",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1097,6 +1323,12 @@
       "category": "nature",
       "duration_min": 420,
       "base_price": 52.35,
+      "targets": [
+        "family",
+        "couples",
+        "sporty",
+        "young"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -1111,6 +1343,11 @@
       "category": "culture",
       "duration_min": 210,
       "base_price": 43.55,
+      "targets": [
+        "couples",
+        "solo",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1120,6 +1357,11 @@
       "category": "culture",
       "duration_min": 150,
       "base_price": 46.24,
+      "targets": [
+        "couples",
+        "family",
+        "young"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1129,6 +1371,11 @@
       "category": "food",
       "duration_min": 180,
       "base_price": 142.29,
+      "targets": [
+        "couples",
+        "foodies",
+        "seniors"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1138,6 +1385,11 @@
       "category": "culture",
       "duration_min": 150,
       "base_price": 41.96,
+      "targets": [
+        "couples",
+        "young",
+        "solo"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1147,6 +1399,11 @@
       "category": "culture",
       "duration_min": 360,
       "base_price": 77.32,
+      "targets": [
+        "couples",
+        "seniors",
+        "family"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -1161,6 +1418,12 @@
       "category": "relax",
       "duration_min": 120,
       "base_price": 0.0,
+      "targets": [
+        "family",
+        "seniors",
+        "relax-seekers",
+        "couples"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1170,6 +1433,11 @@
       "category": "food",
       "duration_min": 180,
       "base_price": 104.1,
+      "targets": [
+        "foodies",
+        "couples",
+        "young"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -1183,6 +1451,10 @@
       "category": "nightlife",
       "duration_min": 150,
       "base_price": 124.7,
+      "targets": [
+        "couples",
+        "young"
+      ],
       "operating_days": [
         "wed",
         "fri",
@@ -1197,6 +1469,10 @@
       "category": "culture",
       "duration_min": 90,
       "base_price": 24.63,
+      "targets": [
+        "young",
+        "solo"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1206,6 +1482,12 @@
       "category": "relax",
       "duration_min": 150,
       "base_price": 17.82,
+      "targets": [
+        "young",
+        "family",
+        "couples",
+        "relax-seekers"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1215,6 +1497,11 @@
       "category": "sport",
       "duration_min": 180,
       "base_price": 29.58,
+      "targets": [
+        "sporty",
+        "family",
+        "young"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -1228,6 +1515,11 @@
       "category": "nature",
       "duration_min": 240,
       "base_price": 52.13,
+      "targets": [
+        "sporty",
+        "couples",
+        "young"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1237,6 +1529,11 @@
       "category": "sport",
       "duration_min": 300,
       "base_price": 53.79,
+      "targets": [
+        "sporty",
+        "young",
+        "solo"
+      ],
       "operating_days": [
         "mon",
         "wed",
@@ -1250,6 +1547,12 @@
       "category": "culture",
       "duration_min": 120,
       "base_price": 19.05,
+      "targets": [
+        "couples",
+        "seniors",
+        "solo",
+        "family"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1259,6 +1562,11 @@
       "category": "culture",
       "duration_min": 150,
       "base_price": 14.45,
+      "targets": [
+        "couples",
+        "seniors",
+        "family"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1268,6 +1576,10 @@
       "category": "sport",
       "duration_min": 240,
       "base_price": 63.49,
+      "targets": [
+        "sporty",
+        "young"
+      ],
       "operating_days": [
         "tue",
         "thu",
@@ -1281,6 +1593,11 @@
       "category": "sport",
       "duration_min": 120,
       "base_price": 11.65,
+      "targets": [
+        "sporty",
+        "family",
+        "young"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1290,6 +1607,12 @@
       "category": "nightlife",
       "duration_min": 180,
       "base_price": 50.98,
+      "targets": [
+        "couples",
+        "family",
+        "seniors",
+        "foodies"
+      ],
       "operating_days": [
         "wed",
         "fri",
@@ -1303,6 +1626,11 @@
       "category": "nature",
       "duration_min": 150,
       "base_price": 14.59,
+      "targets": [
+        "family",
+        "seniors",
+        "couples"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1312,6 +1640,11 @@
       "category": "culture",
       "duration_min": 240,
       "base_price": 28.32,
+      "targets": [
+        "couples",
+        "family",
+        "young"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1321,6 +1654,12 @@
       "category": "relax",
       "duration_min": 120,
       "base_price": 0.0,
+      "targets": [
+        "couples",
+        "family",
+        "relax-seekers",
+        "solo"
+      ],
       "operating_days": "daily"
     },
     {
@@ -1330,6 +1669,11 @@
       "category": "nature",
       "duration_min": 420,
       "base_price": 91.88,
+      "targets": [
+        "sporty",
+        "young",
+        "couples"
+      ],
       "operating_days": [
         "mon",
         "wed",
