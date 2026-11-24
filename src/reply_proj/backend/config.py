@@ -18,6 +18,7 @@ EMBED_DIMS = 3072
 COLLECTION = "travel_corpus"
 AGENT_MODEL = "gemini-3.6-flash"  # D23: pinned; availability probed (3.7/3.8 demand-limited, 2.5 closed to new keys)
 AGENT_MODEL_FALLBACKS = ["gemini-3.5-flash", "gemini-3.5-flash-lite"]  # D23: auto-fallback on persistent 429/503
+SESSION_MAX_AGE = 24 * 3600  # D26: signed-cookie session lifetime (24h)
 
 
 def load_env() -> None:
@@ -39,3 +40,18 @@ def google_api_key() -> str:
     if not key:
         raise RuntimeError("GOOGLE_API_KEY missing — create .env at project root (see README)")
     return key
+
+
+def session_secret() -> str:
+    """Secret for signing session cookies (D26). Generated once into .env if absent."""
+    load_env()
+    secret = os.environ.get("SESSION_SECRET")
+    if secret:
+        return secret
+    import secrets
+    secret = secrets.token_hex(32)
+    with (ROOT / ".env").open("a", encoding="utf-8") as f:
+        f.write(f"\nSESSION_SECRET={secret}\n")
+    os.environ["SESSION_SECRET"] = secret
+    print("generated SESSION_SECRET and appended to .env (gitignored)")
+    return secret

@@ -200,3 +200,19 @@ def list_bookings(user_id: int) -> list[dict]:
         return [dict(r) for r in rows]
     finally:
         con.close()
+
+
+def get_booking(booking_id: int, user_id: int) -> dict | None:
+    """Booking + items, ownership-scoped (None if missing or not yours)."""
+    con = datastore.connect()
+    try:
+        b = con.execute(
+            "SELECT b.*, c.name AS city_name FROM bookings b JOIN cities c ON c.id = b.city_id "
+            "WHERE b.id=? AND b.user_id=?", (booking_id, user_id)).fetchone()
+        if b is None:
+            return None
+        items = con.execute("SELECT * FROM booking_items WHERE booking_id=? ORDER BY id",
+                            (booking_id,)).fetchall()
+        return {**dict(b), "items": [dict(i) for i in items]}
+    finally:
+        con.close()
