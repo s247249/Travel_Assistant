@@ -7,6 +7,7 @@
 const state = {
   user: null, conversations: [], threadId: null,
   messages: [], slots: {}, proposal: null, busy: false, flash: null,
+  cardCollapsed: false, shownProposalId: null,
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -145,6 +146,10 @@ async function loadThread(tid) {
 async function renderChat() {
   try { state.conversations = await api("/api/conversations"); } catch { state.conversations = []; }
   if (!state.threadId && state.conversations.length) await loadThread(state.conversations[0].id);
+  if (state.proposal && state.proposal.proposal_id !== state.shownProposalId) {
+    state.cardCollapsed = false;            // auto-expand a newly built proposal
+    state.shownProposalId = state.proposal.proposal_id;
+  }
 
   $("#app").innerHTML = navbar() + `<div class="container-fluid"><div class="row g-3">
     <div class="col-md-3">
@@ -159,6 +164,7 @@ async function renderChat() {
     </div>
     <div class="col-md-6">
       <div id="messages">${messagesHtml()}</div>
+      <div id="proposal-panel">${proposalPanel()}</div>
       ${flashHtml()}
       <form id="chat-form" class="d-flex gap-2 mt-2">
         <input class="form-control" id="chat-input" placeholder="Tell me about your trip…" autocomplete="off" ${state.busy ? "disabled" : ""}>
@@ -180,6 +186,7 @@ async function renderChat() {
   }));
   $("#chat-form").addEventListener("submit", async (ev) => { ev.preventDefault(); await sendMessage(); });
   $("#confirm-book")?.addEventListener("click", confirmBooking);
+  $("#toggle-card")?.addEventListener("click", async () => { state.cardCollapsed = !state.cardCollapsed; await renderChat(); });
   const box = $("#messages"); box.scrollTop = box.scrollHeight;
   $("#chat-input")?.focus();
 }
@@ -191,31 +198,37 @@ function messagesHtml() {
       <div class="msg ${m.role === "human" ? "msg-human" : "msg-ai"}">${esc(m.content)}</div></div>`).join("");
   const loading = state.busy
     ? `<div class="text-muted small loading-dots">Assistant is planning</div>` : "";
-  return bubbles + (state.proposal ? proposalCard(state.proposal) : "") + loading;
+  return bubbles + loading;
 }
 
-function proposalCard(p) {
+function proposalPanel() {
+  const p = state.proposal;
+  if (!p) return "";
   const badge = p.status === "proposed" ? '<span class="badge bg-primary">proposed</span>'
     : p.status === "booked" ? `<span class="badge bg-success">booked #${esc(p.booking_id)}</span>`
     : `<span class="badge bg-secondary">${esc(p.status)}</span>`;
-  const flights = (p.flights || []).map((f) =>
-    `<tr><td>${esc(f.date)}</td><td>${esc(f.from)} &rarr; ${esc(f.to)}</td><td>${esc(f.depart_time)}</td></tr>`).join("");
-  const days = (p.days || []).map((d) =>
-    `<tr><td>${esc(d.date)}</td><td>${esc(d.name)}</td><td><span class="badge bg-light text-dark">${esc(d.category)}</span></td></tr>`).join("");
   const btn = p.status === "proposed"
     ? '<button class="btn btn-success btn-sm" id="confirm-book">Confirm booking</button>' : "";
-  return `<div class="card my-3 border-primary"><div class="card-header d-flex justify-content-between align-items-center">
-      <strong>Itinerary &mdash; ${esc(p.city)}</strong>${badge}</div>
-    <div class="card-body small">
+  const toggle = `<button class="btn btn-outline-secondary btn-sm" id="toggle-card">${state.cardCollapsed ? "Show details" : "Hide details"}</button>`;
+  let body = "";
+  if (!state.cardCollapsed) {
+    const flights = (p.flights || []).map((f) =>
+      `<tr><td>${esc(f.date)}</td><td>${esc(f.from)} &rarr; ${esc(f.to)}</td><td>${esc(f.depart_time)}</td></tr>`).join("");
+    const days = (p.days || []).map((d) =>
+      `<tr><td>${esc(d.date)}</td><td>${esc(d.name)}</td><td><span class="badge bg-light text-dark">${esc(d.category)}</span></td></tr>`).join("");
+    body = `<div class="card-body small">
       <p class="mb-2">${esc(p.start)} &rarr; ${esc(p.end)} &middot; ${esc(p.travelers)} traveler(s)</p>
       <h6 class="mb-1">Flights</h6><table class="table table-sm mb-2">${flights}</table>
       <h6 class="mb-1">Hotel</h6>
       <p class="mb-2">${esc(p.hotel?.name)} (${esc(p.hotel?.tier)}, ${esc(p.hotel?.rooms_needed)} room(s))</p>
       <h6 class="mb-1">Day by day</h6><table class="table table-sm mb-2">${days}</table>
-      <p class="mb-2"><strong>Total &euro;${esc(p.total_price)}</strong> / budget &euro;${esc(p.budget)}
-        &middot; margin &euro;${esc(p.margin)}</p>
-      ${btn}
-    </div></div>`;
+      <p class="mb-0"><strong>Total &euro;${esc(p.total_price)}</strong> / budget &euro;${esc(p.budget)} &middot; margin &euro;${esc(p.margin)}</p>
+    </div>`;
+  }
+  return `<div class="card border-primary my-2"><div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2 py-2">
+      <strong class="small">Itinerary &mdash; ${esc(p.city)} &middot; ${esc(p.start)} &rarr; ${esc(p.end)} &middot; &euro;${esc(p.total_price)}</strong>
+      <div class="d-flex align-items-center gap-2">${badge}${btn}${toggle}</div>
+    </div>${body}</div>`;
 }
 
 function slotsPanel() {
