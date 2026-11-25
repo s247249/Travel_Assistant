@@ -38,6 +38,14 @@ def create_app() -> FastAPI:
         same_site="lax",
         https_only=False,  # demo over http; set True behind TLS in production
     )
+    @app.middleware("http")
+    async def no_cache_frontend(request, call_next):
+        # Frontend assets revalidate every load (avoids stale cached app.js during dev).
+        response = await call_next(request)
+        if not request.url.path.startswith("/api"):
+            response.headers["Cache-Control"] = "no-cache"
+        return response
+
     app.include_router(users.router, prefix="/api")
     app.include_router(sessions.router, prefix="/api")
     app.include_router(conversations.router, prefix="/api")

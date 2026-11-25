@@ -13,6 +13,7 @@ wheels/
 # Secrets / local config
 .env
 *.env
+*.log
 
 # Local databases & caches (regenerable)
 *.sqlite3
